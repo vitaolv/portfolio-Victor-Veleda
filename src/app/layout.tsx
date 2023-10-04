@@ -1,4 +1,7 @@
 import './globals.css'
+import './css/scrollbar.css'; 
+import './css/animate.css';
+
 import type { Metadata } from 'next'
 import { ReactNode } from 'react'
 
@@ -34,7 +37,8 @@ export default function RootLayout({children}: {children: ReactNode})
         className={`${roboto.variable} ${baiJamjuree.variable} bg-gray-900 font-sans 
         text-gray-100`}
       >
-        <main className='grid min-h-screen grid-cols-2 row-span-6'>
+        <main className='grid min-h-screen md:grid-cols-2 sm:grid-cols-1 row-span-6 lg:grid-cols-2'>
+
 
           <SideLeft />
 
@@ -44,7 +48,6 @@ export default function RootLayout({children}: {children: ReactNode})
             bg=[url(../assets/bg-stars.svg)] bg-cover"}>
               {children}
             </div>
-            
             <div className='row-span-1 h-12 text-center'>
               <Footer />
             </div>

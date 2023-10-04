@@ -1,0 +1,46 @@
+@keyframes moveNave {
+  0% {
+    transform: translateX(-20%) rotate(-8deg);
+  }
+  50% {
+    transform: translateX(95%) rotate(20deg);
+  }
+  100% {
+    transform: translateX(140%) rotate(30deg);
+  }
+}
+
+.animate-nave {
+  animation: moveNave 10s linear infinite;
+}
+
+@keyframes moveHand {
+  0% {
+    transform: translateX(0%) rotate(0deg);
+  }
+  10% {
+    transform: translateX(2%) rotate(14deg);
+  }
+  20% {
+    transform: translateX(4%) rotate(-8deg);
+  }
+  30% {
+    transform: translateX(6%) rotate(14deg);
+  }
+  40% {
+    transform: translateX(4%) rotate(-4deg);
+  }
+  50% {
+    transform: translateX(2%) rotate(10deg);
+  }
+  60% {
+    transform: translateX(2%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(0%) rotate(0deg);
+  }
+}
+
+.animate-hand {
+  animation: moveHand 1s linear infinite;
+}

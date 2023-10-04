@@ -1,0 +1,21 @@
+/* todas as barras de rolagem no meu site */
+::-webkit-scrollbar {
+  width: 12px; /* Largura da barra de rolagem */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #313267; /* Cor de fundo da barra */
+  border-radius: 10px; /* Border radius do fundo */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #97c3a9; /* Cor da barra de rolagem */
+  border-radius: 10px; /* Border radius da barra */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Cor da barra de rolagem ao passar o mouse */
+}

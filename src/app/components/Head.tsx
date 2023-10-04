@@ -12,11 +12,11 @@ export function Head({sections, setActiveSection}: HeadProps) {
     }
 
     return (
-        <div className="flex">
+        <div className="flex flex-wrap gap-8 justify-center mb-10">
             <Image src="../assets/logo.svg" alt="logo" width={270} height={80}></Image>
-            <div className="grid-rows">
+            <div>
                 {sections.map((section) => 
-                    <button key={section} onClick={() => handleSectionClick(section)}> 
+                    <button className="ml-4"key={section} onClick={() => handleSectionClick(section)}> 
                         {section}
                     </button>
                 )}
