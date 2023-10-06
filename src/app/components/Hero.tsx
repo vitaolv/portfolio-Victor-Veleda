@@ -20,7 +20,7 @@ export function Hero() {
                 </p>
     
                 <div className="max-w-screen-md mx-auto mt-5 flex flex-col gap-3
-                 bg-gray-500 bg-opacity-20 p-5 border-2 border-green-700 rounded-lg">
+                 bg-gray-500 bg-opacity-20 p-5 border-2 border-green-700 rounded-lg shadow-gradient-green-blue shadow-green-200">
                     
                     <p className="text-lg font-sans text-gray-50 m-1">
                         Quer saber mais sobre a minha história e as tecnologias que utilizo 

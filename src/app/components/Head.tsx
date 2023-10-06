@@ -51,8 +51,8 @@ export function Head({sections, setActiveSection}: HeadProps) {
                 }
             </button>
 
-            <div className={`${isOpen ? 'flex flex-col border-2 bg-gray-900 bg-opacity-20 border-green-700 rounded-lg \
-                top-20 left-0 w-full h-38 pb-3' : 'hidden'} transition-burguer md:flex transition-opacity duration-300 ease-in-out 
+            <div className={`${isOpen ? 'flex flex-col border-2  bg-gray-900 bg-opacity-20 border-blue-50 rounded-lg \
+                top-20 left-0 w-11/12 h-38 pb-3' : 'hidden'} transition-burguer md:flex transition-opacity duration-300 ease-in-out 
                 opacity-${isOpen ? '100' : '0'}`} >
                 {sections.map((section) => 
                     <button type="button" className="mr-0 md:mr-4 mt-4"key={section} onClick={() => handleSectionClick(section) } > 

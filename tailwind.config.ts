@@ -15,7 +15,7 @@ module.exports = {
       },
       
       boxShadow: {
-          'gradient-green-blue': '0 0 0 3px linear-gradient(to right, #97C3A9, #B6DFF6)',
+          'gradient-green-blue': '0 0 5px 2px linear-gradient(to right, #97C3A9, #B6DFF6)',
       },
 
       colors: {
@@ -41,6 +41,7 @@ module.exports = {
           600: "#764fd0",
           700: "#5c3ea3",
           800: "#313267",
+          850: "#313267",
           900: "#170843",
         },
         orange: {

@@ -5,7 +5,7 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #313267; /* Cor de fundo da barra */
+  background: #131321; /* Cor de fundo da barra */
   border-radius: 10px; /* Border radius do fundo */
 }
 
@@ -17,5 +17,5 @@
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; /* Cor da barra de rolagem ao passar o mouse */
+  background: #b6dff6; /* Cor da barra de rolagem ao passar o mouse */
 }

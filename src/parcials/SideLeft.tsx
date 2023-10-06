@@ -21,7 +21,7 @@ export function SideLeft() {
 
                 {/* Blur */}
                 <div className="absolute right-0 top-1/2 h-[288px] w-[526px] \
-                -translate-y-1/2 translate-x-1/2 rounded-full bg-blue-600 \
+                -translate-y-1/2 translate-x-1/2 rounded-full bg-purble-850 \
                 opacity-70 blur-full" />
                 
                 {/* Stripes */}
