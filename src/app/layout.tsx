@@ -1,6 +1,7 @@
 import './globals.css'
 import './css/scrollbar.css'; 
 import './css/animate.css';
+import './css/menu.css';
 
 import type { Metadata } from 'next'
 import { ReactNode } from 'react'
@@ -43,7 +44,7 @@ export default function RootLayout({children}: {children: ReactNode})
           <SideLeft />
 
           {/* Right */}
-          <div className=" grid min-h-screen flex-col grid-rows-2">
+          <div className=" grid min-h-screen flex-col grid-rows-2 bg-gray-900">
             <div className={"row-span-4 overflow-y-scroll \
             bg=[url(../assets/bg-stars.svg)] bg-cover"}>
               {children}
