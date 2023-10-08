@@ -1,7 +1,6 @@
 import "./globals.css";
 import "./css/scrollbar.css";
 import "./css/animate.css";
-import "./css/menu.css";
 
 import type { Metadata } from "next";
 import { ReactNode } from "react";
