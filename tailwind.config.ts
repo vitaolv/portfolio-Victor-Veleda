@@ -16,7 +16,35 @@ module.exports = {
       
       boxShadow: {
           'gradient-green-blue': '0 0 5px 2px linear-gradient(to right, #97C3A9, #B6DFF6)',
-      },
+          'md-left-right-bottom': '2px 0px 8px -1px rgba(151, 195, 169, 1), -2px 0px 9px -1px rgba(92, 182, 235, 1), 0 2px 6px -1px rgba(151, 195, 169, 1)'
+        },
+
+        keyframes: {
+          animateUnderline: {
+            '0%': {
+              transform: 'scaleX(0)'},
+            '10%': {
+              transform: 'scaleX(10%)'},
+            '20%': {
+              transform: 'scaleX(20%)'},
+            '30%': {
+              transform: 'scaleX(30%)'},
+            '50%': {
+              transform: 'scaleX(50%)'},
+            '60%': {
+              transform: 'scaleX(60%)'},
+            '80%': {
+              transform: 'scaleX(80%)'},
+            '100%': {
+              transform: 'scaleX(100%)'},
+          }
+
+        },
+
+        animation : {
+          'none': 'none',
+          'underline' : 'animateUnderline 1s ease-in',
+        },
 
       colors: {
         gray: {
