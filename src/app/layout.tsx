@@ -12,6 +12,7 @@ import {
 
 import { Footer } from "./components/Footer";
 import { SideLeft } from "@/parcials/SideLeft";
+import { SideRight } from "@/parcials/SideRight";
 
 const roboto = Roboto({ subsets: ["latin"], variable: "--font-roboto" });
 
@@ -47,9 +48,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             >
               {children}
             </div>
-            <div className="row-span-1 h-12 text-center">
-              <Footer />
-            </div>
+            <SideRight />
           </div>
         </main>
       </body>
