@@ -9,11 +9,12 @@ export const projects: {
 projects.push({
   name: "E-commerce online: Loja de chocolate",
   link: "https://vitaolv.github.io/project-vite-react-ecommerce/",
-  description:
-    "Um site de e-commerce e um carrinho de compras, onde os usuários podem visualizar \
-    a página principal, pesquisar os produtos, adicionar produtos, selecionar quantidades, \
-    visualizar os itens no carrinho, remover produtos, calcular o preço total das compras e \
-    finalizar o pedido de compra.",
+  description: `
+    Um site de e-commerce e um carrinho de compras, onde os usuários podem visualizar 
+    a página principal, pesquisar os produtos, adicionar produtos, selecionar quantidades,
+    visualizar os itens no carrinho, remover produtos, calcular o preço total das compras e
+    finalizar o pedido de compra.
+    `,
   sources: [
     "Javascript",
     "Vite",

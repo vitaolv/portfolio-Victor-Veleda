@@ -1,10 +1,15 @@
-import Image from 'next/image'
+import { HeroSection } from "@/sections/HeroSection";
+import { ProjectsSection } from "@/sections/ProjectsSection"
 
 export default function Home() {
+
   return (
-    <div className="flex flex-col gap-10 p-8">
+    <div className="flex flex-col gap-10">
       <div className="">
-        <h1> Card aqui </h1>
+        <main className="row-span-6 grid min-h-screen overflow-hidden">
+          <HeroSection />
+          <ProjectsSection />
+        </main>
       </div>
     </div>
   )
