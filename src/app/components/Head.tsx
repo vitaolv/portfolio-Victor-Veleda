@@ -10,9 +10,9 @@ type HeadProps = {
 };
 
 export function Head({ sections }: HeadProps) {
-    const [isOpen, setIsOpen] = useState(false);
-    const [scrollCount, setScrollCount] = useState(0);
-    const [headerClass, setHeaderClass] = useState("bg-transparent transition-all duration-400 pt-6")
+    const [isOpen, setIsOpen] = useState<boolean>(false);
+    const [scrollCount, setScrollCount] = useState<number>(0);
+    const [headerClass, setHeaderClass] = useState<string>("bg-transparent transition-all duration-400 pt-6")
 
     useEffect(() => {
         const handleEesize = () => {
@@ -35,7 +35,7 @@ export function Head({ sections }: HeadProps) {
 
             if (scrolled > 100) {
                 setScrollCount(scrollCount + 1);
-                if (scrollCount => 2) {
+                if (scrollCount >= 2) {
                     setHeaderClass('bg-gray-900 bg-opacity-90 transition-all duration-400')
                 }
             } else {
