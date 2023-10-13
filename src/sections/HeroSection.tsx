@@ -22,7 +22,7 @@ export function HeroSection() {
       <Hero />
 
       {/*Animation*/}
-      <div className="animate-nave w-full">
+      <div className="animate-nave w-full h-">
         <Image
           src="/assets/nave.png"
           className=""

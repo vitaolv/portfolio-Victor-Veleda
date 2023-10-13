@@ -43,7 +43,7 @@ module.exports = {
 
         animation : {
           'none': 'none',
-          'underline' : 'animateUnderline 1s ease-in',
+          'underline' : 'animateUnderline 0.6s ease-in',
         },
 
       colors: {

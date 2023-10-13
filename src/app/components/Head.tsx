@@ -12,7 +12,7 @@ type HeadProps = {
 export function Head({ sections }: HeadProps) {
     const [isOpen, setIsOpen] = useState(false);
     const [scrollCount, setScrollCount] = useState(0);
-    const [headerClass, setHeaderClass] = useState("bg-transparent")
+    const [headerClass, setHeaderClass] = useState("bg-transparent transition-all duration-400 pt-6")
 
     useEffect(() => {
         const handleEesize = () => {
@@ -36,11 +36,11 @@ export function Head({ sections }: HeadProps) {
             if (scrolled > 100) {
                 setScrollCount(scrollCount + 1);
                 if (scrollCount => 2) {
-                    setHeaderClass('bg-gray-900 bg-opacity-50 transition-all')
+                    setHeaderClass('bg-gray-900 bg-opacity-80 h-20 transition-all duration-400 pt-10')
                 }
             } else {
                 setScrollCount(0);
-                setHeaderClass('bg-transparent');
+                setHeaderClass('bg-transparent transition-all duration-400');
             }
 
 
@@ -55,7 +55,7 @@ export function Head({ sections }: HeadProps) {
     }, [scrollCount])
 
     return (
-        <div className={`fixed top-0 left-0 right-0 p-6 flex justify-between 
+        <div className={` fixed top-0 left-0 right-0 p-6 flex justify-around 
         items-center z-50 ${headerClass}`} >
             <Logo />
             <ButtonBurguer isOpen={isOpen} setIsOpen={setIsOpen} />
