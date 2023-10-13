@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Logo } from "./Logo";
-import { ButtonBurguer } from "./ButtonBurguer";
+import { ButtonBurger } from "./ButtonBurger";
 import { HeaderNavigation } from "./HeaderNavigation";
 
 type HeadProps = {
@@ -36,7 +36,7 @@ export function Head({ sections }: HeadProps) {
             if (scrolled > 100) {
                 setScrollCount(scrollCount + 1);
                 if (scrollCount => 2) {
-                    setHeaderClass('bg-gray-900 bg-opacity-80 h-20 transition-all duration-400 pt-10')
+                    setHeaderClass('bg-gray-900 bg-opacity-90 transition-all duration-400')
                 }
             } else {
                 setScrollCount(0);
@@ -58,7 +58,7 @@ export function Head({ sections }: HeadProps) {
         <div className={` fixed top-0 left-0 right-0 p-6 flex justify-around 
         items-center z-50 ${headerClass}`} >
             <Logo />
-            <ButtonBurguer isOpen={isOpen} setIsOpen={setIsOpen} />
+            <ButtonBurger isOpen={isOpen} setIsOpen={setIsOpen} />
             <HeaderNavigation isOpen={isOpen} sections={sections} />
         </div >
     );

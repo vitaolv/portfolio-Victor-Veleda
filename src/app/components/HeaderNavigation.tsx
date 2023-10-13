@@ -10,8 +10,8 @@ export function HeaderNavigation({ isOpen, sections }: HeaderNavigationProps) {
     return (
         <div
             className={`${isOpen
-                ? "h-38 left-0 top-20 flex w-11/12 flex-col rounded-lg border-2 border-blue-50 bg-gray-900 bg-opacity-20 pb-2"
-                : "hidden"
+                ? "pb-2 pt-2 left-0 right-0 top-24 w-full h-50 flex flex-col rounded-lg border-2 border-blue-50 bg-gray-900 absolute transition-all duration-500"
+                : "hidden transition-all duration-500"
                 } transition-transform duration-300 ease-in-out md:flex`}
         >
             {sections.map((section) => (
@@ -25,7 +25,7 @@ export function HeaderNavigation({ isOpen, sections }: HeaderNavigationProps) {
                         <div
                             className="opacity-transition inset-x-0 bottom-0 mt-1 h-1 origin-left animate-none rounded-md 
                 bg-gradient-to-r from-green-700 via-green-100 to-blue-200 opacity-0 
-                shadow-md-left-right-bottom group-hover:animate-underline group-hover:opacity-70"
+                shadow-md-left-right-bottom group-hover:animate-underline group-hover:opacity-70 transition-all duration-500"
                         />
                     </span>
                 </button>
