@@ -2,14 +2,15 @@
 
 import { XIcon } from "lucide-react";
 import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { MenuBurgerIsOpen, MenuBurgerIsClose } from "../store/Actions/MenuActions";
+import { RootState } from "../store";
 
 
-type ButtonBurgerProps = {
-  isOpen: boolean;
-  setIsOpen: (isOpen: boolean) => void;
-};[]
+export function ButtonBurger() {
+  const isOpen = useSelector((state: RootState) => state.menuBurger.menuIsOpen);
 
-export function ButtonBurger({ isOpen, setIsOpen }: ButtonBurgerProps) {
+  const dispatch = useDispatch();
 
   useEffect(() => {
     if (isOpen) {
@@ -21,13 +22,24 @@ export function ButtonBurger({ isOpen, setIsOpen }: ButtonBurgerProps) {
   }, [isOpen])
 
 
+  const handleBurgerClick = () => {
+    if (!isOpen) {
+      console.log("Clicou em abrir!")
+      dispatch(MenuBurgerIsOpen());
+    } else {
+      dispatch(MenuBurgerIsClose());
+      console.log("Clicou em fechar!")
+    }
+  };
+
+
   return (
     <button
       type="button"
       className={`rounded-full border-2 border-blue-100 p-2 md:hidden 
                         ${isOpen ? "rotate-180 border-2 border-green-700" : "scale-100 border-2 border-blue-100"
         } transition-transform md:flex-grow-0`}
-      onClick={() => setIsOpen(!isOpen)}
+      onClick={handleBurgerClick}
     >
       {isOpen ? (
         <XIcon className="h-8 w-8 bg-gray-900 bg-opacity-20 text-green-100" />

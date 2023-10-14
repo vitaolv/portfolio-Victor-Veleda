@@ -4,20 +4,23 @@ import { useState, useEffect } from "react";
 import { Logo } from "./Logo";
 import { ButtonBurger } from "./ButtonBurger";
 import { HeaderNavigation } from "./HeaderNavigation";
+import { useSelector, useDispatch } from "react-redux";
+import { RootState } from "../store";
 
-type HeadProps = {
-    sections: string[];
-};
+import { MenuBurgerIsClose } from "../store/Actions/MenuActions";
 
-export function Head({ sections }: HeadProps) {
-    const [isOpen, setIsOpen] = useState<boolean>(false);
+export function Head() {
+    const sections: string[] = ["Home", "Sobre mim", "Competências"];
+    const isOpen = useSelector((state: RootState) => state.menuBurger.menuIsOpen)
     const [scrollCount, setScrollCount] = useState<number>(0);
     const [headerClass, setHeaderClass] = useState<string>("bg-transparent transition-all duration-400 pt-6")
+
+    const dispatch = useDispatch();
 
     useEffect(() => {
         const handleEesize = () => {
             if (window.innerWidth > 767) {
-                setIsOpen(false);
+                dispatch(MenuBurgerIsClose());
             }
         };
 
@@ -26,7 +29,7 @@ export function Head({ sections }: HeadProps) {
         return () => {
             window.removeEventListener("resize", handleEesize);
         };
-    }, []);
+    }, [dispatch]);
 
     useEffect(() => {
 
@@ -42,8 +45,6 @@ export function Head({ sections }: HeadProps) {
                 setScrollCount(0);
                 setHeaderClass('bg-transparent transition-all duration-400');
             }
-
-
         }
 
         window.addEventListener("scroll", handleScroll)
@@ -51,14 +52,13 @@ export function Head({ sections }: HeadProps) {
         return () => {
             window.removeEventListener("scroll", handleScroll)
         }
-
     }, [scrollCount])
 
     return (
         <div className={` fixed top-0 left-0 right-0 p-6 flex justify-around 
         items-center z-50 ${headerClass}`} >
             <Logo />
-            <ButtonBurger isOpen={isOpen} setIsOpen={setIsOpen} />
+            <ButtonBurger />
             <HeaderNavigation isOpen={isOpen} sections={sections} />
         </div >
     );
