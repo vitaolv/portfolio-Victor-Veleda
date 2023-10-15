@@ -10,11 +10,12 @@ module.exports = {
   
   theme: {
     extend: {
+
       fontFamily: {
         sans: "var(--font-roboto)",
         alt: "var(--font-bai-jamjuree)",
       },
-      
+
       boxShadow: {
           'gradient-green-blue': '0 0 5px 2px linear-gradient(to right, #97C3A9, #B6DFF6)',
           'md-left-right-bottom': '2px 0px 8px -1px rgba(151, 195, 169, 1), -2px 0px 9px -1px rgba(92, 182, 235, 1), 0 2px 6px -1px rgba(151, 195, 169, 1)'

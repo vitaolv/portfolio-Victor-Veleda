@@ -21,6 +21,7 @@ export function Head() {
         const handleEesize = () => {
             if (window.innerWidth > 767) {
                 dispatch(MenuBurgerIsClose());
+                document.body.classList.remove("blur-background"); // Remova a classe do corpo
             }
         };
 

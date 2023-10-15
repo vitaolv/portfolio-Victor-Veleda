@@ -1,36 +1,32 @@
 'use client'
 
+import "../css/transitionTop.css";
+
 import { XIcon } from "lucide-react";
-import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { MenuBurgerIsOpen, MenuBurgerIsClose } from "../store/Actions/MenuActions";
 import { RootState } from "../store";
 
 
+
 export function ButtonBurger() {
+
   const isOpen = useSelector((state: RootState) => state.menuBurger.menuIsOpen);
 
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
+  const handleBurgerClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
 
-  }, [isOpen])
-
-
-  const handleBurgerClick = () => {
     if (!isOpen) {
-      console.log("Clicou em abrir!")
+      document.body.style.overflow = "hidden";
       dispatch(MenuBurgerIsOpen());
     } else {
+      document.body.style.overflow = "";
       dispatch(MenuBurgerIsClose());
-      console.log("Clicou em fechar!")
     }
   };
+
 
 
   return (
