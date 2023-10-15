@@ -56,7 +56,7 @@ export function Head() {
     }, [scrollCount])
 
     return (
-        <div className={` fixed top-0 left-0 right-0 p-6 flex justify-around 
+        <div className={` fixed top-0 left-0 right-0 p-6 pl-1 pr-12 flex justify-between md:pl-12
         items-center z-50 ${headerClass}`} >
             <Logo />
             <ButtonBurger />

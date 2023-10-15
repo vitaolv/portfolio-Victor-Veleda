@@ -32,13 +32,13 @@ export function ButtonBurger() {
   return (
     <button
       type="button"
-      className={`rounded-full border-2 border-blue-100 p-2 md:hidden 
-                        ${isOpen ? "rotate-180 border-2 border-blue-100" : "scale-100 border-2 border-green-700"
+      className={`left-0 rounded-full border-2 border-blue-100 p-2 md:hidden 
+                        ${isOpen ? "rotate-180 border-2 border-blue-100" : "scale-100 border-2 border-green-700 p-2"
         } transition-transform md:flex-grow-0`}
       onClick={handleBurgerClick}
     >
       {isOpen ? (
-        <XIcon className="h-8 w-8 bg-gray-900 bg-opacity-20 text-blue-100" />
+        <XIcon className="h-7 w-7 bg-gray-900 bg-opacity-20 text-blue-100" />
       ) : (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +46,7 @@ export function ButtonBurger() {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="h-8 w-8 transform-gpu bg-gray-900 bg-opacity-20 text-green-100 transition-transform duration-300 ease-in-out"
+          className="h-7 w-7 transform-gpu bg-gray-900 bg-opacity-20 text-green-100 transition-transform duration-300 ease-in-out"
         >
           <path
             strokeLinecap="round"

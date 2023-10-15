@@ -33,7 +33,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body
         className={`${roboto.variable} ${baiJamjuree.variable} bg-gray-900 font-sans text-gray-100`}
       >
-        <div className=" grid min-h-screen grid-rows-2 flex-col bg-gray-900">
+        <div className=" grid min-h-screen grid-rows-2 flex-col bg-gray-900 overflow-hidden">
           <div
             className={"bg=[url(../assets/bg-stars.svg)] row-span-4 bg-cover"}
           >

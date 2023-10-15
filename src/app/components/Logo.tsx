@@ -5,9 +5,9 @@ export function Logo() {
     <Image
       src="../assets/logo.svg"
       alt="logo"
-      width={325}
+      width={320}
       height={80}
-      className="order-0 h-auto max-h-16 w-auto max-w-full self-center md:order-none"
+      className="h-auto max-h-16 max-w-full w-56 md:w-auto"
     />
   );
 }

@@ -6,7 +6,7 @@ export function HeroSection() {
   return (
     <section
       className="relative flex flex-col gap-12 overflow-hidden
-            border-r border-white/10 bg-[url(/assets/bg-stars.svg)] bg-cover py-20 pt-60 h-screen"
+            border-r border-white/10 bg-[url(/assets/bg-stars.svg)] bg-cover py-20 pt-52 h-fit md:h-[900px]"
     >
       {/* Blur */}
       <div
