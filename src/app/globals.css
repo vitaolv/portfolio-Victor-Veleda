@@ -28,7 +28,6 @@ body {
 
 .escurecer {
   filter: blur(10px);
-  pointer-events: none;
   position: fixed;
   top: 0;
   left: 0;

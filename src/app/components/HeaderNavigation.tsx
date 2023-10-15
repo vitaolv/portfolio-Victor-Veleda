@@ -10,9 +10,9 @@ export function HeaderNavigation({ isOpen, sections }: HeaderNavigationProps) {
     return (
         <div
             className={`${isOpen
-                ? "pb-2 pt-2 left-0 right-0 top-24 w-full h-50 flex flex-col rounded-lg border-2 border-blue-50 bg-gray-900 absolute transition-all duration-500"
-                : "hidden transition-all duration-500"
-                } transition-transform duration-300 ease-in-out md:flex`}
+                ? "pb-2 origin-top animate-topOriginMenu pt-2 left-0 right-0 top-24 w-full h-50 flex flex-col rounded-lg border-2 border-blue-50 bg-gray-900 absolute transition transform duration-500 ease-in-out"
+                : "hidden origin-bottom animate-topOriginMenu transition transform duration-500 ease-in-out"
+                } transition-transform duration-500 ease-in-out md:flex`}
         >
             {sections.map((section) => (
                 <button

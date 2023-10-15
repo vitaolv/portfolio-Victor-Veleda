@@ -39,13 +39,38 @@ module.exports = {
               transform: 'scaleX(80%)'},
             '100%': {
               transform: 'scaleX(100%)'},
-          }
+          },
 
+          translateMenu: {
+            '0%': {
+            transform: 'scaleY(0)', opacity: "0%"},
+            '10%': { 
+            transform: 'scaleY(10%)', opacity: "10%"},
+            '20%': { 
+            transform: 'scaleY(20%)', opacity: "10%"},
+            '30%': { 
+            transform: 'scaleY(30%)', opacity: "20%"},
+            '40%': { 
+            transform: 'scaleY(40%)', opacity: "20%"},
+            '50%': { 
+            transform: 'scaleY(50%)', opacity: "30%"},
+            '60%': { 
+            transform: 'scaleY(60%)', opacity: "45%"},
+            '70%': { 
+            transform: 'scaleY(70%)', opacity: "60%"},
+            '80%': { 
+            transform: 'scaleY(80%)', opacity: "70%"},
+            '90%': { 
+            transform: 'scaleY(90%)', opacity: "80%"},
+            '100%': { 
+            transform: 'scaleY(100%)', opacity: "90%"},
+          } 
         },
 
         animation : {
           'none': 'none',
           'underline' : 'animateUnderline 0.6s ease-in',
+          'topOriginMenu': 'translateMenu 0.1s ease-in-out',
         },
 
       colors: {
