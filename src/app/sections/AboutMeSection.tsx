@@ -4,17 +4,20 @@ export function AboutMeSection() {
     return (
         <section className="items-center text-center bg-[url(/assets/bg-stars.svg)]">
             <div
-                className="mx-auto mt-5 flex max-w-screen-md flex-col gap-3 justify-center
+                className="mx-auto mt-5 mb-5 flex max-w-screen-md flex-col gap-3 justify-center
                 rounded-lg border-2 border-blue-100 bg-gray-500 bg-opacity-20 
                 p-5 shadow-gradient-green-blue shadow-blue-200"
             >
-                <div className="mx-auto left-0 items-center text-center w-fit">
+                <div className="mx-auto left-0 items-center text-center w-fit border-green-700 border-2 border-double 
+                shadow-gradient-green-blue shadow-blue-200 rounded-full p-1">
                     <Image
-                        className="´p-0 m-0 rounded-full"
-                        src="/assets/logo.png"
-                        width={350}
+                        className="´p-0 m-0 rounded-full border-blue-100 border-2 border-double
+                        shadow-gradient-green-blue shadow-blue-200"
+                        src="/assets/foto-victor.png"
+                        width={180}
                         height={80}
-                        alt="Victor"
+                        alt="Vitão"
+                        data-noindex="true"
                     />
                 </div>
 
