@@ -158,10 +158,10 @@ module.exports = {
       },
       backgroundImage: {
         stripes:
-          "linear-gradient(to bottom, rgba(255,255,255,0.1), rgba(255,255,255,0.1)12.5%, transparent12.5%, transparent)",
+          "linear-gradient(to bottom, rgba(255,255,255,0.3), rgba(255,255,255,0.3) 12.5%, transparent 12.5%, transparent)",
       },
       backgroundSize:{
-        stripes:"100%8px"
+        stripes:"100% 8px"
       },
       fontSize:{
         "5xl":"2.3rem"

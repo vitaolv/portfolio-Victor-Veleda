@@ -15,9 +15,6 @@ export function HeroSection() {
                 opacity-70 blur-full"
       />
 
-      {/* Stripes */}
-      <div className="absolute bottom-1/2 w-2 bg-stripes" />
-
       {/* Hero Component*/}
       <Hero />
 
