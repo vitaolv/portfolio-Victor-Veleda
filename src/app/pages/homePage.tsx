@@ -1,6 +1,7 @@
 'use client'
 
 import { HeroSection } from "@/app/sections/HeroSection";
+import { AboutMeSection } from "@/app/sections/AboutMeSection";
 import { ProjectsSection } from "@/app/sections/ProjectsSection"
 
 import { MenuBurgerIsClose } from "../store/Actions/MenuActions";
@@ -23,6 +24,7 @@ export default function HomePage() {
         <div className="flex flex-col gap-10">
             <div className="row-span-6 grid min-h-screen">
                 <HeroSection />
+                <AboutMeSection />
                 <ProjectsSection />
             </div>
             {isBurgerOpen && <div className="escurecer fixed inset-0" onClick={handleCloseOnAnyClick} />}

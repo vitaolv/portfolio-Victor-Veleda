@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export function Hero() {
   return (
     <div className="px-12 md:ml-9 md:mr-9 items-center">
@@ -15,7 +13,7 @@ export function Hero() {
         <p className="m-1 mx-auto max-w-screen-md font-sans text-lg text-gray-50 md:text-left">
           Aqui, você está prestes a embarcar em uma jornada intergaláctica
           através dos meus projetos, onde cada site é uma estrela brilhante no
-          vasto céu do desenvolvimento web.
+          vasto céu do desenvolvimento de front-end.
         </p>
 
         <div
@@ -23,15 +21,20 @@ export function Hero() {
                 rounded-lg border-2 border-green-700 bg-gray-500 bg-opacity-20 
                 p-5 shadow-gradient-green-blue shadow-green-200"
         >
-          <p className="m-1 font-sans text-lg text-gray-50 md:text-left">
-            Quer saber mais sobre a minha história e as tecnologias que utilizo
+          <p className="m-1 font-alt text-md text-green-700 md:text-left">
+            Quer saber a minha jornada e as tecnologias que utilizo
             para viajar pelo espaço digital?
           </p>
 
-          <p className="m-1 font-sans text-lg text-gray-50 md:text-left margin-left">
-            Basta clicar em &apos;Sobre mim&apos; e &apos;Competências&apos; e
-            juntar-se à minha missão interestelar de criação de experiências web
+          <p className="m-1 font-sans text-md text-gray-50 md:text-left">
+            Clique em <span className="font-alt">&apos;Sobre mim&apos;</span> e <span className="font-alt"> &apos;Competências&apos;</span> no menu e
+            juntar-se à minha missão de criação de experiências web
             incríveis.
+          </p>
+
+          <p className="m-1 font-sans text-md text-gray-50 md:text-left">
+            Veja meus projetos, minhas estrelas brilhantes no universo do front-end.
+            Clique em <span className="font-alt">&apos;Projetos&apos;</span> no menu e impressione-se com meu trabalho.
           </p>
         </div>
       </div>
