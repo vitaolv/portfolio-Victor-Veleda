@@ -93,6 +93,15 @@ export const MyCompetencies: {
                 `,
                     icon: "/assets/icons/antDesign.svg",
                 },
+                {
+                    id: 5,
+                    name: "SASS",
+                    description: `
+                    ...
+                `,
+                    icon: "/assets/icons/sass.svg",
+                },
+
             ],
         },
         {
