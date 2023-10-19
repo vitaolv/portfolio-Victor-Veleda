@@ -13,7 +13,7 @@ export function ProjetctsList() {
                         <div className="flex flex-col w-96">
                             <div className="">
                                 <Image
-                                    className="´rounded-xl"
+                                    className=" shadow-gradient-green-blue rounded-2xl border-2 border-green-700 shadow-blue-50"
                                     src="/assets/videos/1projeto-ecommerce.gif"
                                     width={480}
                                     height={80}

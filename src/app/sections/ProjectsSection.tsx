@@ -2,7 +2,8 @@ import { ProjetctsList } from "../components/ProjectsList";
 
 export function ProjectsSection() {
   return (
-    <section className="bg-[url(/assets/bg-stars.svg)] grid min-h-screen grid-rows-2 flex-col bg-gray-900 mt-56">
+    <section className="bg-[url(/assets/bg-stars.svg)] grid min-h-screen 
+    grid-rows-2 flex-col bg-gray-900 pt-52">
       <div
         className={"bg=[url(../assets/bg-stars.svg)] row-span-4 bg-cover"}
       >

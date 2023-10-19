@@ -22,13 +22,13 @@ export function AboutMeSection() {
                 </div>
 
                 <p className="m-1 font-alt text-2xl font-bold text-blue-100 text-center">
-                    Sobre mim:
+                    Sobre mim
                 </p>
 
                 <p className="m-1 font-sans text-gray-50 md:text-left margin-left">
                     Em minha jornada intergaláctica, explorei desde linguagens de baixo nível,
                     como C e Assembly, e na minha busca por conhecimento, explorei galáxias de Java,
-                    Python e finalmente aterrissando no terreno fértil de JavaScript e Typescript.
+                    Python e finalmente aterrissando no terreno fértil de JavaScript e TypeScript.
                 </p>
 
                 <p className="m-1 font-sans text-gray-50 md:text-left margin-left">
@@ -46,7 +46,7 @@ export function AboutMeSection() {
                     Atualmente, graduando em Sistemas para Internet com ênfase em Front-End, sou apaixonado pela criação de interfaces incríveis e funcionais,
                     transformando ideias em realidade. Cada site que eu crio é como uma nave espacial que leva os usuários a uma experiência única e memorável.
 
-                    Além disso, programo em JavaScript com React, Typescript e Next.js,
+                    Além disso, programo em JavaScript com React, TypeScript e Next.js,
                     buscando constantemente aprender novas ferramentas e atualizar minhas habilidades, como um astronauta curioso e inovador.
                 </p>
 

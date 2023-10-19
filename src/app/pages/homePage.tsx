@@ -8,6 +8,7 @@ import { MenuBurgerIsClose } from "../store/Actions/MenuActions";
 
 import { useSelector, useDispatch } from 'react-redux';
 import { RootState } from "../store";
+import { CompetenciesSection } from "../sections/CompetenciesSection";
 
 
 export default function HomePage() {
@@ -23,9 +24,12 @@ export default function HomePage() {
     return (
         <div className="flex flex-col gap-10">
             <div className="row-span-6 grid min-h-screen">
+                {/* Sections */}
                 <HeroSection />
                 <AboutMeSection />
                 <ProjectsSection />
+                <CompetenciesSection />
+
             </div>
             {isBurgerOpen && <div className="escurecer fixed inset-0" onClick={handleCloseOnAnyClick} />}
         </div>
