@@ -59,7 +59,7 @@ export const MyCompetencies: {
         },
         {
             id: 2,
-            title: "Tecnologias e ferramentas disponíveis para escolha e otimização de soluções",
+            title: "Tecnologias disponíveis para escolha e otimização de soluções",
             items: [
                 {
                     id: 1,
@@ -139,6 +139,14 @@ export const MyCompetencies: {
                     ...
                 `,
                     icon: "/assets/icons/book.svg",
+                },
+                {
+                    id: 5,
+                    name: "Metodologias Ágeis (incluindo Scrum e Kanban)",
+                    description: `
+                    ...
+                `,
+                    icon: "/assets/icons/agile.svg",
                 },
             ],
         },
