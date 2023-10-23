@@ -12,7 +12,7 @@ export function CompetencyCardComponent() {
                     <div className="border-green-700 border-2 shadow-gradient-green-blue shadow-green-700 p-10 rounded-lg md:w-96 w-auto text-center md:text-left">
                         <ul className="flex flex-wrap justify-center gap-4">
                             {category.items.map((item) => (
-                                <div key={item.id} className="flex flex-row w-auto md:w-56 mx-auto items-center gap-4">
+                                <li key={item.id} className="flex flex-row w-auto md:w-56 mx-auto items-center gap-4">
                                     <Image
                                         className="m-0 h-24"
                                         alt="icon"
@@ -23,7 +23,7 @@ export function CompetencyCardComponent() {
                                     <p className="font-sans text-left text-md md:text-lg font-medium items-center w-32 sm:w-56 md:w-56">
                                         {item.name}
                                     </p>
-                                </div>
+                                </li>
                             ))}
                         </ul>
                     </div>

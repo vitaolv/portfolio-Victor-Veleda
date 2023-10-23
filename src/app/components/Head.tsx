@@ -56,11 +56,13 @@ export function Head() {
     }, [scrollCount])
 
     return (
-        <div className={` fixed top-0 left-0 right-0 p-6 pl-1 pr-12 flex justify-between md:pl-12
+        <div className={` fixed top-0 left-0 right-0 p-6 pl-1 pr-12 md:pl-12
         items-center z-50 ${headerClass}`} >
-            <Logo />
-            <ButtonBurger />
-            <HeaderNavigation isOpen={isOpen} sections={sections} />
-        </div >
+            <div className="flex justify-between md:w-fit ml-4 md:ml-14">
+                <Logo />
+                <ButtonBurger />
+                <HeaderNavigation isOpen={isOpen} sections={sections} />
+            </div >
+        </div>
     );
 }

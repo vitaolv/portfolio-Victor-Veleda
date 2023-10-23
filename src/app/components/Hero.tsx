@@ -1,6 +1,6 @@
 export function Hero() {
   return (
-    <div className="px-12 md:ml-9 md:mr-9 items-center">
+    <div className="m-0 md:pl-20 md:pr-20 mx-auto items-center w-10/12">
       <h1 className="font-alt text-4xl font-bold text-green-700">
         Olá! Sou Victor Veleda,
       </h1>
