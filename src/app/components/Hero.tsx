@@ -21,18 +21,18 @@ export function Hero() {
                 rounded-lg border-2 border-green-700 bg-gray-500 bg-opacity-20 
                 p-12 shadow-gradient-green-blue shadow-green-200"
         >
-          <p className="m-1 font-alt text-2xl text-md text-green-700 md:text-left">
+          <p className="m-1 font-alt text-lgPlus text-green-700 md:text-left">
             Quer saber a minha jornada e as tecnologias que utilizo
             para viajar pelo espaço digital?
           </p>
 
-          <p className="m-1 font-sans text-lg text-md text-gray-50 md:text-left">
+          <p className="m-1 font-sans text-lg text-gray-50 md:text-left">
             Clique em <span className="font-alt">&apos;Sobre mim&apos;</span> e <span className="font-alt"> &apos;Competências&apos;</span> no menu e
             juntar-se à minha missão de criação de experiências web
             incríveis.
           </p>
 
-          <p className="m-1 font-sans text-md text-lg text-gray-50 md:text-left">
+          <p className="m-1 font-sans text-lg text-gray-50 md:text-left">
             Veja meus projetos, minhas estrelas brilhantes no universo do front-end.
             Clique em <span className="font-alt">&apos;Projetos&apos;</span> no menu e impressione-se com meu trabalho.
           </p>

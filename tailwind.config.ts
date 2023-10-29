@@ -41,6 +41,13 @@ module.exports = {
               transform: 'scaleX(100%)'},
           },
 
+          animateGradient: {
+            '0%': { backgroundPositionX: '0%' },
+            '100%': { backgroundPositionX: '100%' },
+            'background': 'linear-gradient(to right, #34d399, #38bdf8, #6ee7b7, #93c5fd)',
+          },
+          
+
           translateMenu: {
             '0%': {
             transform: 'scaleY(0)', opacity: "0%"},
@@ -103,7 +110,8 @@ module.exports = {
           'topOriginMenu': 'translateMenu 0.1s ease-in-out',
           'spinCircle': 'spin 2s linear infinite',
           'fadeInScrollWithOpacity': 'fadeInScrollWithOpacity 2s ease-in-out forwards',
-          'fadeInScroll': 'fadeInScroll 2s ease-in-out forwards'
+          'fadeInScroll': 'fadeInScroll 2s ease-in-out forwards',
+          'underlineAnimationGradient': 'animateGradient 2slinear infinite',
         },
 
       colors: {
@@ -197,6 +205,8 @@ module.exports = {
         stripes:"100% 8px"
       },
       fontSize:{
+        "md": "1rem",
+        'lgPlus': '1.225rem',
         "5xl":"2.5rem"
       }
     }

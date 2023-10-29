@@ -1,4 +1,5 @@
 export const projects: {
+  id: number;
   name: string;
   link: string;
   description: string;
@@ -7,6 +8,7 @@ export const projects: {
 }[] = [];
 
 projects.push({
+  id: 1,
   name: "E-commerce online: Loja de chocolate",
   link: "https://vitaolv.github.io/project-vite-react-ecommerce/",
   description: `
@@ -29,6 +31,7 @@ projects.push({
 });
 
 projects.push({
+  id: 2,
   name: "Nome do projeto aqui",
   link: "Adicione link do segundo projeto",
   description: "Meu segundo projeto, faça um textão bem bonito aqui",

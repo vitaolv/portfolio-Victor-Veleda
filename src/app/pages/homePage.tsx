@@ -10,6 +10,7 @@ import { useSelector, useDispatch } from 'react-redux';
 
 import { RootState } from "../store";
 import { CompetenciesSection } from "../sections/CompetenciesSection";
+import { ContactSection } from "../sections/ContactSection";
 
 
 export default function HomePage() {
@@ -30,6 +31,7 @@ export default function HomePage() {
                 <AboutMeSection />
                 <ProjectsSection />
                 <CompetenciesSection />
+                <ContactSection />
 
             </div>
             {isBurgerOpen && <div className="escurecer fixed inset-0" onClick={handleCloseOnAnyClick} />}
