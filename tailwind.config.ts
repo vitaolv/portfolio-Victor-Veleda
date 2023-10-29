@@ -18,7 +18,7 @@ module.exports = {
 
       boxShadow: {
           'gradient-green-blue': '0 0 5px 2px linear-gradient(to right, #97C3A9, #B6DFF6)',
-          'md-left-right-bottom': '2px 0px 8px -1px rgba(151, 195, 169, 1), -2px 0px 9px -1px rgba(92, 182, 235, 1), 0 2px 6px -1px rgba(151, 195, 169, 1)'
+          'md-left-right-bottom': '2px 0px 8px -1px rgba(151, 195, 169, 1), -2px 0px 9px -1px rgba(92, 182, 235, 1), 0 2px 6px -1px rgba(151, 195, 169, 1)',
         },
 
         keyframes: {
@@ -64,13 +64,21 @@ module.exports = {
             transform: 'scaleY(90%)', opacity: "80%"},
             '100%': { 
             transform: 'scaleY(100%)', opacity: "90%"},
-          } 
+          },
+          
+          spin: {
+            '100%': {
+              transform: 'rotate(360deg)'
+            }
+          }
+
         },
 
         animation : {
           'none': 'none',
           'underline' : 'animateUnderline 0.6s ease-in',
           'topOriginMenu': 'translateMenu 0.1s ease-in-out',
+          'spinCircle': 'spin 2s linear infinite',
         },
 
       colors: {
@@ -158,13 +166,13 @@ module.exports = {
       },
       backgroundImage: {
         stripes:
-          "linear-gradient(to bottom, rgba(255,255,255,0.3), rgba(255,255,255,0.3) 12.5%, transparent 12.5%, transparent)",
-      },
+          'linear-gradient(to bottom, rgba(255,255,255,0.3), rgba(255,255,255,0.3) 12.5%, transparent 12.5%, transparent)',
+        },
       backgroundSize:{
         stripes:"100% 8px"
       },
       fontSize:{
-        "5xl":"2.3rem"
+        "5xl":"2.5rem"
       }
     }
   },

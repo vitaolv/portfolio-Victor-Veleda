@@ -15,9 +15,7 @@ export function ButtonBurger() {
 
   const dispatch = useDispatch();
 
-  const handleBurgerClick = (e: React.MouseEvent<HTMLButtonElement>) => {
-    e.preventDefault();
-
+  const handleBurgerClick = () => {
     if (!isOpen) {
       document.body.style.overflow = "hidden";
       dispatch(MenuBurgerIsOpen());
@@ -38,7 +36,7 @@ export function ButtonBurger() {
       onClick={handleBurgerClick}
     >
       {isOpen ? (
-        <XIcon className="h-7 w-7 bg-gray-900 bg-opacity-20 text-blue-100" />
+        <XIcon className="h-8 w-8 bg-gray-900 bg-opacity-20 text-blue-100" />
       ) : (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +44,7 @@ export function ButtonBurger() {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="h-7 w-7 transform-gpu bg-gray-900 bg-opacity-20 text-green-100 transition-transform duration-300 ease-in-out"
+          className="h-8 w-8 transform-gpu bg-gray-900 bg-opacity-20 text-green-100 transition-transform duration-300 ease-in-out"
         >
           <path
             strokeLinecap="round"

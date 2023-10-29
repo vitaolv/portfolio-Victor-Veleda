@@ -7,6 +7,8 @@ import "./css/animate.css";
 import type { Metadata } from "next";
 import { ReactNode } from "react";
 
+import { ButtonScrollToTop } from "./components/ButtonScrollToTop";
+
 import {
   Roboto_Flex as Roboto,
   Bai_Jamjuree as BaiJamjuree,
@@ -31,7 +33,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body
-        className={`${roboto.variable} ${baiJamjuree.variable} bg-gray-900 font-sans text-gray-100`}
+        className={`${roboto.variable} ${baiJamjuree.variable} bg-gray-900 font-sans text-gray-100 text-lg`}
       >
         <div className=" grid min-h-screen grid-rows-2 flex-col bg-gray-900 overflow-hidden">
           <div
@@ -40,8 +42,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             {children}
           </div>
         </div>
+        <ButtonScrollToTop />
       </body>
     </html>
-
   );
 }

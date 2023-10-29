@@ -16,9 +16,8 @@ export default function App() {
 
         <HomePage />
 
-        <div className="row-span-1 m-5 h-12 text-center">
-          <Footer />
-        </div>
+        <Footer />
+
       </main>
     </Provider >
   )
