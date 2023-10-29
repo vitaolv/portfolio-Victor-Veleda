@@ -1,4 +1,4 @@
-import { MyCompetencies } from "../utils/MyCompetencies";
+import { MyCompetencies } from "../utils/dates/MyCompetencies";
 import Image from "next/image";
 
 export function CompetencyCardComponent() {

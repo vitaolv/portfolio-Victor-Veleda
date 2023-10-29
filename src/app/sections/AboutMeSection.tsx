@@ -1,12 +1,13 @@
 import Image from "next/image";
 
 export function AboutMeSection() {
+
     return (
         <section className="items-center text-center bg-[url(/assets/bg-stars.svg)]">
-            <div className="mx-auto p-5">
+            <div className="mx-auto p-5 js-show-on-scroll transition-opacity invisible">
                 <div
                     className="mx-auto mt-5 mb-5 flex max-w-screen-md flex-col gap-3 justify-center
-                rounded-lg border-2 border-blue-100 bg-gray-500 bg-opacity-20 
+                rounded-lg border-2 border-blue-100 bg-gray-500 bg-opacity-20
                 p-5 shadow-gradient-green-blue shadow-blue-200"
                 >
                     <div className="mx-auto left-0 items-center text-center w-fit border-green-700 border-2 border-double 
@@ -53,7 +54,7 @@ export function AboutMeSection() {
 
 
                 </div>
-            </div>
-        </section>
+            </div >
+        </section >
     )
 }

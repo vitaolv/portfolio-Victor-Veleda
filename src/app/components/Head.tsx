@@ -10,7 +10,7 @@ import { RootState } from "../store";
 import { MenuBurgerIsClose } from "../store/Actions/MenuActions";
 
 export function Head() {
-    const sections: string[] = ["Home", "Sobre mim", "Competências"];
+    const sections: string[] = ["Home", "Sobre mim", "Projetos", "Competências"];
     const isOpen = useSelector((state: RootState) => state.menuBurger.menuIsOpen)
     const [scrollCount, setScrollCount] = useState<number>(0);
     const [headerClass, setHeaderClass] = useState<string>('bg-gray-900 bg-opacity-60 transition-all duration-400 pt-6');
@@ -55,9 +55,9 @@ export function Head() {
     }, [scrollCount]);
 
     return (
-        <div className={` fixed top-0 left-0 right-0 p-6 pl-1 pr-12 md:pl-12
+        <div className={` fixed top-0 left-0 right-0 p-6 pl-1 pr-12 md:pl-2 w-auto
         items-center z-50 ${headerClass}`} >
-            <div className="flex justify-between md:w-fit ml-4 md:ml-14">
+            <div className="flex justify-around ml-4">
                 <Logo />
                 <ButtonBurger />
                 <HeaderNavigation isOpen={isOpen} sections={sections} />

@@ -7,6 +7,7 @@ import { ProjectsSection } from "@/app/sections/ProjectsSection"
 import { MenuBurgerIsClose } from "../store/Actions/MenuActions";
 
 import { useSelector, useDispatch } from 'react-redux';
+
 import { RootState } from "../store";
 import { CompetenciesSection } from "../sections/CompetenciesSection";
 

@@ -65,6 +65,29 @@ module.exports = {
             '100%': { 
             transform: 'scaleY(100%)', opacity: "90%"},
           },
+
+          fadeInScrollWithOpacity: {
+            '0%': {
+              opacity: '0',
+              transform: 'translateY(36px)',
+              transition: 'all 2s',
+            },
+            '100%': {
+              opacity: '1',
+              transform: 'translateY(0)',
+              visibility: 'visible',
+              
+            }
+          },
+
+          fadeInScroll: {
+            '0%': {
+              opacity: '1',
+            },
+            '100%': {
+              opacity: '0',
+            }
+          },
           
           spin: {
             '100%': {
@@ -79,6 +102,8 @@ module.exports = {
           'underline' : 'animateUnderline 0.6s ease-in',
           'topOriginMenu': 'translateMenu 0.1s ease-in-out',
           'spinCircle': 'spin 2s linear infinite',
+          'fadeInScrollWithOpacity': 'fadeInScrollWithOpacity 2s ease-in-out forwards',
+          'fadeInScroll': 'fadeInScroll 2s ease-in-out forwards'
         },
 
       colors: {

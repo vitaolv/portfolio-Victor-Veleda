@@ -1,4 +1,4 @@
-import { projects } from "@/app/utils/MyProjects";
+import { projects } from "@/app/utils/dates/MyProjects";
 import { StripesProjectSection } from "./Stripes";
 import Image from "next/image";
 
