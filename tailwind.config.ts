@@ -112,6 +112,7 @@ module.exports = {
           'fadeInScrollWithOpacity': 'fadeInScrollWithOpacity 2s ease-in-out forwards',
           'fadeInScroll': 'fadeInScroll 2s ease-in-out forwards',
           'underlineAnimationGradient': 'animateGradient 2slinear infinite',
+          
         },
 
       colors: {

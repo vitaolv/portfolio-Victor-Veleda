@@ -30,7 +30,7 @@ export function ButtonScrollToTop() {
     return (
         <>
             {scrollY > 300 && (
-                < div className="fixed bottom-9 right-6"
+                < div className="fixed bottom-9 right-6 animate-fadeInScrollWithOpacity animate-fadeInScroll"
                     onClick={handleClick}>
                     <div className="relative w-14 h-14 rounded-full bg-gradient-to-r from-turquoise-200 to-green-200 shadow-blue-200 shadow-gradient-green-blue animate-spinCircle">
                         <div className="w-full h-full bg-gradient-to-r from-turquoise-200 to-green-700 rounded-full shadow-blue-100 shadow-gradient-green-blue" />

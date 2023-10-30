@@ -11,10 +11,10 @@ export function ContactListComponent() {
                 <ul key={items.id} className="mx-auto">
                     <li>
                         <Image
-                            className="´p-0 m-0 mx-auto"
+                            className="´p-0 m-0 mx-auto rounded-xl"
                             src={items.icon}
-                            width={54}
-                            height={54}
+                            width={50}
+                            height={50}
                             alt={items.name}
                             data-noindex="true"
                         />
