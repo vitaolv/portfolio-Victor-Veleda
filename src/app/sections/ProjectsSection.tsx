@@ -7,8 +7,8 @@ export function ProjectsSection() {
       <div
         className={"bg=[url(../assets/bg-stars.svg)] row-span-4 bg-cover"}
       >
-        <div className=" text-center js-show-on-scroll transition-opacity invisible">
-          <h1 className="font-alt text-3xl font-semibold text-green-700">
+        <div className=" text-center">
+          <h1 className="font-alt text-3xl font-semibold text-green-700 js-show-on-scroll transition-opacity invisible">
             Meus projetos
           </h1>
 
