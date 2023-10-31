@@ -37,7 +37,7 @@ export function ButtonScrollToTop() {
                     </div>
                     <Image
                         className="mx-auto transform -translate-y-12"
-                        src="/assets/icons/backToTop.svg"
+                        src="/projeto-meu-portfolio/assets/icons/backToTop.svg"
                         width={48}
                         height={48}
                         alt="backToTop"

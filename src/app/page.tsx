@@ -30,10 +30,9 @@ export default function App() {
     <Provider store={store}>
       <Head />
       <main className="row-span-6 grid min-h-screen">
-
         <HomePage />
-        <Footer />
 
+        <Footer />
       </main>
     </Provider >
   )

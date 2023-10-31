@@ -24,7 +24,7 @@ const baiJamjuree = BaiJamjuree({
 
 export const metadata: Metadata = {
   title: "Victor Veleda | Portfólio",
-  icons: { icon: "/assets/foto-victor.png" },
+  icons: { icon: "/projeto-meu-portfolio/assets/foto-victor.png" },
   description:
     "Neste portfólio, trago diversos projetos de websites desenvolvidos com foco em desenvolvimento de front-end.",
 };
@@ -36,10 +36,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body
         className={`${roboto.variable} ${baiJamjuree.variable} bg-gray-900 font-sans text-gray-100 text-lg`}
       >
-        <link rel="icon" href="/assets/nave.png" sizes="any" />
+        <link rel="icon" href="/projeto-meu-portfolio/assets/nave.png" sizes="any" />
         <div className=" grid min-h-screen grid-rows-2 flex-col bg-gray-900 overflow-hidden">
           <div
-            className={"bg=[url(projeto-meu-portfolio/assets/bg-stars.svg)] row-span-4 bg-cover"}
+            className={"bg=[url(/projeto-meu-portfolio/assets/bg-stars.svg)] row-span-4 bg-cover"}
           >
             {children}
           </div>

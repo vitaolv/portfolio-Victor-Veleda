@@ -2,7 +2,7 @@ import { ContactListComponent } from "../components/ContactList";
 
 export function ContactSection() {
     return (
-        <section className="bg-[url(/assets/bg-stars.svg)] js-show-on-scroll transition-opacity invisible mt-32 mb-36">
+        <section className="bg-[url(/projeto-meu-portfolio/assets/bg-stars.svg)] js-show-on-scroll transition-opacity invisible mt-32 mb-36">
             <div className="mx-auto items-center text-center flex flex-col justify-center">
                 <h2 className="font-alt text-3xl text-green-700 mb-12">Contato</h2>
 

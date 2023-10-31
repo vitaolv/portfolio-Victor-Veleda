@@ -27,7 +27,7 @@ export const projects: {
         "CSS3",
         "Bootstrap",
       ],
-      gif: "/assets/videos/1projeto-ecommerce.gif",
+      gif: "/projeto-meu-portfolio/assets/videos/1projeto-ecommerce.gif",
     },
     {
       id: 2,
@@ -56,7 +56,7 @@ export const projects: {
         "Bootstrap",
         "Ant Design",
       ],
-      gif: "/assets/videos/2projeto-ecommerce.gif",
+      gif: "/projeto-meu-portfolio/assets/videos/2projeto-ecommerce.gif",
     },
     {
       id: 3,
@@ -74,7 +74,7 @@ export const projects: {
       sources: [
         "TypeScript", "React", "SASS",
       ],
-      gif: "/assets/dev.png",
+      gif: "/projeto-meu-portfolio/assets/dev.png",
     },
   ];
 

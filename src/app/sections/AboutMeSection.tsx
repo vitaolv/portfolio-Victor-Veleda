@@ -3,7 +3,7 @@ import Image from "next/image";
 export function AboutMeSection() {
 
     return (
-        <section className="items-center text-center bg-[url(/assets/bg-stars.svg)]">
+        <section className="items-center text-center bg-[url(/projeto-meu-portfolio/assets/bg-stars.svg)]">
             <div className="mx-auto p-5 js-show-on-scroll transition-opacity invisible">
                 <div
                     className="mx-auto mt-5 mb-5 flex max-w-screen-md flex-col gap-3 justify-center
@@ -15,7 +15,7 @@ export function AboutMeSection() {
                         <Image
                             className="´p-0 m-0 rounded-full border-blue-100 border-2 border-double
                         shadow-gradient-green-blue shadow-blue-200"
-                            src="/assets/foto-victor.png"
+                            src="/projeto-meu-portfolio/assets/foto-victor.png"
                             width={180}
                             height={80}
                             alt="Vitão"
