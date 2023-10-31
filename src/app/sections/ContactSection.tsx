@@ -1,4 +1,5 @@
-import { ContactListComponent } from "../components/ContactList";
+import { ContactDetailsComponent } from "../components/contactDetailsComponent";
+
 
 export function ContactSection() {
     return (
@@ -30,7 +31,7 @@ export function ContactSection() {
                     </p>
                     <div></div>
 
-                    <ContactListComponent />
+                    <ContactDetailsComponent />
                 </div>
             </div>
         </section>
