@@ -10,7 +10,7 @@ import { RootState } from "../store";
 import { MenuBurgerIsClose } from "../store/Actions/MenuActions";
 
 export function Head() {
-    const sections: string[] = ["Home", "Sobre mim", "Projetos", "Competências"];
+    const sections: string[] = ["Home", "Sobre mim", "Projetos", "Competências", "Contato"];
     const isOpen = useSelector((state: RootState) => state.menuBurger.menuIsOpen)
     const [scrollCount, setScrollCount] = useState<number>(0);
     const [headerClass, setHeaderClass] = useState<string>('bg-gray-900 bg-opacity-60 transition-all duration-400 pt-6');

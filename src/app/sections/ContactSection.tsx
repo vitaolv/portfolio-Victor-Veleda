@@ -1,4 +1,4 @@
-import { ContactDetailsComponent } from "../components/contactDetailsComponent";
+import { ContactDetailsComponent } from "../components/ContactDetailsComponent";
 
 
 export function ContactSection() {
