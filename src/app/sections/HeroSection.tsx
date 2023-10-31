@@ -6,7 +6,7 @@ export function HeroSection() {
   return (
     <section
       className="relative flex flex-col gap-12 overflow-hidden
-            border-r border-white/10 bg-[url(/projeto-meu-portfolio/assets/bg-stars.svg)] py-20 pt-32 md:pt-52 h-fit md:h-[1000px]"
+            border-r border-white/10 bg-[url(/portfolio-Victor-Veleda/assets/bg-stars.svg)] py-20 pt-32 md:pt-52 h-fit md:h-[1000px]"
     >
       {/* Blur */}
       <div
@@ -21,7 +21,7 @@ export function HeroSection() {
       {/*Animation*/}
       <div className="animate-nave w-full h-">
         <Image
-          src="/projeto-meu-portfolio/assets/nave.png"
+          src="/portfolio-Victor-Veleda/assets/nave.png"
           className=""
           alt="nave"
           width={45}

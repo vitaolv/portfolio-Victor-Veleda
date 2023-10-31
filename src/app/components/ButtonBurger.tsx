@@ -28,7 +28,7 @@ export function ButtonBurger() {
   return (
     <button
       type="button"
-      className={`left-0 rounded-full border-2 border-blue-100 p-2 md:hidden 
+      className={`left-0 rounded-full border-2 border-blue-100 p-2 md:hidden outline-none 
                         ${isOpen ? "rotate-180 border-2 border-blue-100" : "scale-100 border-2 border-green-700 p-2"
         } transition-transform md:flex-grow-0`}
       onClick={handleBurgerClick}

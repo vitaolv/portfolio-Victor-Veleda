@@ -21,7 +21,7 @@ export const MyCompetencies: {
                     visualizar os itens no carrinho, remover produtos, calcular o preço total das compras e
                     finalizar o pedido de compra.
                 `,
-                    icon: "/projeto-meu-portfolio/assets/icons/js.svg",
+                    icon: "/portfolio-Victor-Veleda/assets/icons/js.svg",
                 },
                 {
                     id: 2,
@@ -29,7 +29,7 @@ export const MyCompetencies: {
                     description: `
                     ...
                 `,
-                    icon: "/projeto-meu-portfolio/assets/icons/ts.svg",
+                    icon: "/portfolio-Victor-Veleda/assets/icons/ts.svg",
                 },
                 {
                     id: 3,
@@ -37,7 +37,7 @@ export const MyCompetencies: {
                     description: `
                     ...
                 `,
-                    icon: "/projeto-meu-portfolio/assets/icons/html5.svg",
+                    icon: "/portfolio-Victor-Veleda/assets/icons/html5.svg",
                 },
                 {
                     id: 4,
@@ -45,7 +45,7 @@ export const MyCompetencies: {
                     description: `
                     ...
                 `,
-                    icon: "/projeto-meu-portfolio/assets/icons/css.svg",
+                    icon: "/portfolio-Victor-Veleda/assets/icons/css.svg",
                 },
                 {
                     id: 5,
@@ -53,7 +53,7 @@ export const MyCompetencies: {
                     description: `
                     ...
                 `,
-                    icon: "/projeto-meu-portfolio/assets/icons/react.svg",
+                    icon: "/portfolio-Victor-Veleda/assets/icons/react.svg",
                 },
             ],
         },
@@ -67,7 +67,7 @@ export const MyCompetencies: {
                     description: `
                     ...
                 `,
-                    icon: "/projeto-meu-portfolio/assets/icons/nextjs.svg",
+                    icon: "/portfolio-Victor-Veleda/assets/icons/nextjs.svg",
                 },
                 {
                     id: 2,
@@ -75,7 +75,7 @@ export const MyCompetencies: {
                     description: `
                     ...
                 `,
-                    icon: "/projeto-meu-portfolio/assets/icons/bootstrap.svg",
+                    icon: "/portfolio-Victor-Veleda/assets/icons/bootstrap.svg",
                 },
                 {
                     id: 3,
@@ -83,7 +83,7 @@ export const MyCompetencies: {
                     description: `
                     ...
                 `,
-                    icon: "/projeto-meu-portfolio/assets/icons/tailwindcss.svg",
+                    icon: "/portfolio-Victor-Veleda/assets/icons/tailwindcss.svg",
                 },
                 {
                     id: 4,
@@ -91,7 +91,7 @@ export const MyCompetencies: {
                     description: `
                     ...
                 `,
-                    icon: "/projeto-meu-portfolio/assets/icons/antDesign.svg",
+                    icon: "/portfolio-Victor-Veleda/assets/icons/antDesign.svg",
                 },
                 {
                     id: 5,
@@ -99,7 +99,7 @@ export const MyCompetencies: {
                     description: `
                     ...
                 `,
-                    icon: "/projeto-meu-portfolio/assets/icons/sass.svg",
+                    icon: "/portfolio-Victor-Veleda/assets/icons/sass.svg",
                 },
 
             ],
@@ -114,7 +114,7 @@ export const MyCompetencies: {
                     description: `
                     ...
                 `,
-                    icon: "/projeto-meu-portfolio/assets/icons/interpessoal.svg",
+                    icon: "/portfolio-Victor-Veleda/assets/icons/interpessoal.svg",
                 },
                 {
                     id: 2,
@@ -122,7 +122,7 @@ export const MyCompetencies: {
                     description: `
                     ...
                 `,
-                    icon: "/projeto-meu-portfolio/assets/icons/tests.svg",
+                    icon: "/portfolio-Victor-Veleda/assets/icons/tests.svg",
                 },
                 {
                     id: 3,
@@ -130,7 +130,7 @@ export const MyCompetencies: {
                     description: `
                     ...
                 `,
-                    icon: "/projeto-meu-portfolio/assets/icons/UXUI.svg",
+                    icon: "/portfolio-Victor-Veleda/assets/icons/UXUI.svg",
                 },
                 {
                     id: 4,
@@ -138,7 +138,7 @@ export const MyCompetencies: {
                     description: `
                     ...
                 `,
-                    icon: "/projeto-meu-portfolio/assets/icons/book.svg",
+                    icon: "/portfolio-Victor-Veleda/assets/icons/book.svg",
                 },
                 {
                     id: 5,
@@ -146,7 +146,7 @@ export const MyCompetencies: {
                     description: `
                     ...
                 `,
-                    icon: "/projeto-meu-portfolio/assets/icons/agile.svg",
+                    icon: "/portfolio-Victor-Veleda/assets/icons/agile.svg",
                 },
             ],
         },
