@@ -2,11 +2,9 @@
 
 import "../css/transitionTop.css";
 
-import { XIcon } from "lucide-react";
 import { useDispatch, useSelector } from "react-redux";
 import { MenuBurgerIsOpen, MenuBurgerIsClose } from "../store/Actions/MenuActions";
 import { RootState } from "../store";
-
 
 
 export function ButtonBurger() {
@@ -36,7 +34,7 @@ export function ButtonBurger() {
       onClick={handleBurgerClick}
     >
       {isOpen ? (
-        <XIcon className="h-8 w-8 bg-gray-900 bg-opacity-20 text-blue-100" />
+        <p className="h-8 w-8 bg-gray-900 bg-opacity-20 font-alt text-2xl text-blue-100">X</p>
       ) : (
         <svg
           xmlns="http://www.w3.org/2000/svg"
