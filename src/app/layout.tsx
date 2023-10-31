@@ -39,7 +39,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <link rel="icon" href="/assets/nave.png" sizes="any" />
         <div className=" grid min-h-screen grid-rows-2 flex-col bg-gray-900 overflow-hidden">
           <div
-            className={"bg=[url(../assets/bg-stars.svg)] row-span-4 bg-cover"}
+            className={"bg=[url(projeto-meu-portfolio/assets/bg-stars.svg)] row-span-4 bg-cover"}
           >
             {children}
           </div>
