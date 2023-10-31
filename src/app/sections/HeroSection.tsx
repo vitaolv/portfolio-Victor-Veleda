@@ -5,6 +5,7 @@ import Image from "next/image";
 export function HeroSection() {
   return (
     <section
+      id="home"
       className="relative flex flex-col gap-12 overflow-hidden
             border-r border-white/10 bg-[url(/portfolio-Victor-Veleda/assets/bg-stars.svg)] py-20 pt-32 md:pt-52 h-fit md:h-[1000px]"
     >

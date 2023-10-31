@@ -1,11 +1,20 @@
 
 type HeaderNavigationProps = {
     isOpen: boolean,
-    sections: string[],
+    sections: { key: string, value: string }[],
+
 }
 
 export function HeaderNavigation({ isOpen, sections }: HeaderNavigationProps) {
 
+
+    const handleClick = (sectionTitle: string) => {
+
+        const element = document.getElementById(sectionTitle);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' })
+        }
+    };
 
     return (
         <div
@@ -17,11 +26,12 @@ export function HeaderNavigation({ isOpen, sections }: HeaderNavigationProps) {
             {sections.map((section) => (
                 <button
                     type="button"
+                    onClick={() => handleClick(section.value)}
                     className="mb-3 mr-0 mt-3 md:mr-6 md:mt-2"
-                    key={section}
+                    key={section.key}
                 >
                     <span className="group relative inline-block w-auto font-alt font-extrabold">
-                        {section}
+                        {section.key}
                         <div
                             className="opacity-transition inset-x-0 bottom-0 mt-1 h-1 origin-left animate-none rounded-md 
                 bg-gradient-to-r from-green-700 via-green-100 to-blue-200 opacity-0 
@@ -29,7 +39,8 @@ export function HeaderNavigation({ isOpen, sections }: HeaderNavigationProps) {
                         />
                     </span>
                 </button>
-            ))}
-        </div>
+            ))
+            }
+        </div >
     )
 }
