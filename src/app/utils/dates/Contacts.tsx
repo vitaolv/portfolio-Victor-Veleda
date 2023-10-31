@@ -7,13 +7,13 @@ export const Contacts: {
         {
             id: 1,
             name: 'GitHub',
-            icon: '/assets/icons/github.svg',
+            icon: '/portfolio-Victor-Veleda/assets/icons/github.svg',
             link: 'https://github.com/vitaolv'
         },
         {
             id: 2,
             name: 'LinkedIn',
-            icon: '/assets/icons/linkedin.svg',
+            icon: '/portfolio-Victor-Veleda/assets/icons/linkedin.svg',
             link: 'https://www.linkedin.com/in/victorveleda/'
         }
     ];
