@@ -4,7 +4,7 @@ import { store } from "./store";
 
 import { Footer } from "./components/Footer";
 import { Head } from "./components/Head";
-import HomePage from "./pages/HomePage";
+import HomePage from './pages/homePage';
 
 import useIntersectionObserver from "./utils/scrolls/fadeIn"
 
