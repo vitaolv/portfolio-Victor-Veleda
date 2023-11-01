@@ -65,7 +65,7 @@ export function Head() {
     }, [scrollCount]);
 
     return (
-        <div className={` fixed top-0 left-0 right-0 p-6 pl-1 pr-12 md:pl-2 w-auto
+        <div className={`fixed top-0 left-0 right-0 p-6 pl-1 pr-12 md:pl-2 w-auto
         items-center z-50 ${headerClass}`} >
             <div className="flex justify-around ml-4">
                 <Logo sections={sections} />

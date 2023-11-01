@@ -5,13 +5,14 @@ import "../css/transitionTop.css";
 import { useDispatch, useSelector } from "react-redux";
 import { MenuBurgerIsOpen, MenuBurgerIsClose } from "../store/Actions/MenuActions";
 import { RootState } from "../store";
+import { useEffect, useRef } from "react";
 
 
 export function ButtonBurger() {
 
   const isOpen = useSelector((state: RootState) => state.menuBurger.menuIsOpen);
-
   const dispatch = useDispatch();
+  const menuRef = useRef<HTMLButtonElement>(null)
 
   const handleBurgerClick = () => {
     if (!isOpen) {
@@ -23,7 +24,23 @@ export function ButtonBurger() {
     }
   };
 
+  useEffect(() => {
 
+    const handleBodyClick = (e: MouseEvent) => {
+      const target = e.target as Node;
+
+      if (!menuRef.current?.contains(target) && isOpen) {
+        document.body.style.overflow = "";
+        dispatch(MenuBurgerIsClose())
+      }
+    }
+    document.body.addEventListener('click', handleBodyClick)
+
+    return () => {
+      document.body.removeEventListener('click', handleBodyClick)
+    }
+
+  }, [menuRef, isOpen, dispatch]);
 
   return (
     <button

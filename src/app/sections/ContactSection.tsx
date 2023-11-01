@@ -3,7 +3,8 @@ import { ContactDetailsComponent } from "../components/ContactDetailsComponent";
 
 export function ContactSection() {
     return (
-        <section id="contato" className="bg-[url(/portfolio-Victor-Veleda/assets/bg-stars.svg)] js-show-on-scroll transition-opacity invisible mt-32 mb-36">
+        <section id="contato"
+            className="bg-[url(/portfolio-Victor-Veleda/assets/bg-stars.svg)] js-show-on-scroll transition-opacity invisible mt-28 mb-36">
             <div className="mx-auto items-center text-center flex flex-col justify-center">
                 <h2 className="font-alt text-3xl text-green-700 mb-12">Contato</h2>
 
