@@ -6,7 +6,22 @@ import Link from "next/link";
 export function ContactDetailsComponent() {
 
     return (
-        <>
+        <div className="flex flex-col">
+            <p className="w-auto text-lg font-alt text-center mb-4">
+                Entre em contato por meio do <span className="text-green-700">
+                    LinkedIn
+                </span> ou <span className="text-green-700">
+                    E-mail
+                </span> abaixo:
+            </p>
+            <a
+                href="mailto:devlveleda@gmail.com"
+                className="w-auto text-green-700 mb-4 mb-text-lg font-alt text-center">
+                devlveleda@gmail.com
+            </a>
+            <p className="w-auto mb-6 text-lg font-alt text-center">
+                Acompanhe cada passo dessa jornada, siga-me no GitHub e LinkedIn:
+            </p>
             <div className="flex flex-row mx-auto items-center max-w-[150px] gap-2">
 
                 {Contacts.map((items) => (
@@ -26,16 +41,6 @@ export function ContactDetailsComponent() {
                     </ul>
                 ))}
             </div >
-
-            <p className="w-auto mt-6 mb-3 text-lg font-alt text-center">
-                Ou, entre em contato por via E-mail:
-            </p>
-
-            <a
-                href="mailto:devlveleda@gmail.com"
-                className="w-auto text-green-700 mb-6 text-lg font-alt text-center">
-                devlveleda@gmail.com
-            </a>
-        </>
+        </div>
     )
 }
