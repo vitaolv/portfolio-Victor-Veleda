@@ -25,7 +25,7 @@ export function AboutMeSection() {
                         />
                     </div>
 
-                    <p className="m-1 font-alt text-2xl font-bold text-blue-100 text-center">
+                    <p className="m-1 font-alt text-3xl font-bold text-blue-100 text-center">
                         Sobre mim
                     </p>
 

@@ -1,7 +1,7 @@
 export function Hero() {
   return (
     <div className="m-4 pl-5 pr-5 md:mt-5 md:pl-20 md:pr-20 mx-auto items-center w-auto md:w-11/12 js-show-on-scroll transition-opacity invisible">
-      <h1 className="font-alt text-4xl md:text-5xl font-bold text-green-700">
+      <h1 className="font-alt text-4xl md:text-6xl font-bold text-green-700">
         Olá! Sou Victor Veleda,
       </h1>
 
