@@ -12,10 +12,10 @@ export function AboutMeSection() {
                 rounded-lg border-2 border-blue-100 bg-gray-500 bg-opacity-20
                 p-5 shadow-gradient-green-blue shadow-blue-200"
                 >
-                    <div className="mx-auto left-0 items-center text-center w-fit border-green-700 border-2 border-double 
+                    <div className="mx-auto left-0 items-center text-center w-fit border-blue-100 border-2 border-double 
                 shadow-gradient-green-blue shadow-blue-200 rounded-full p-1">
                         <Image
-                            className="´p-0 m-0 rounded-full border-blue-100 border-2 border-double
+                            className="´p-0 m-0 rounded-full border-blue-200 border-2 border-double
                         shadow-gradient-green-blue shadow-blue-200"
                             src="/portfolio-Victor-Veleda/assets/foto-victor.png"
                             width={180}
