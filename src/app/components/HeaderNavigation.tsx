@@ -1,3 +1,4 @@
+import { ButtonCV } from "./ButtonCV";
 
 type HeaderNavigationProps = {
     isOpen: boolean,
@@ -19,7 +20,7 @@ export function HeaderNavigation({ isOpen, sections }: HeaderNavigationProps) {
     return (
         <div
             className={`${isOpen
-                ? "pb-2 origin-top animate-topOriginMenu pt-2 left-0 right-0 top-24 w-full h-50 flex flex-col rounded-lg border-2 border-blue-50 bg-gray-900 absolute transition transform duration-500 ease-in-out"
+                ? "pb-6 origin-top animate-topOriginMenu pt-2 left-0 right-0 top-24 w-full h-50 flex flex-col rounded-lg border-2 border-blue-50 bg-gray-900 absolute transition transform duration-500 ease-in-out"
                 : "hidden origin-bottom animate-topOriginMenu transition transform duration-500 ease-in-out"
                 } transition-transform duration-500 ease-in-out md:flex`}
         >
@@ -35,12 +36,13 @@ export function HeaderNavigation({ isOpen, sections }: HeaderNavigationProps) {
                         <div
                             className="opacity-transition inset-x-0 bottom-0 mt-1 h-1 origin-left animate-none rounded-md 
                 bg-gradient-to-r from-green-700 via-green-100 to-blue-200 opacity-0 
-                shadow-md-left-right-bottom group-hover:animate-underline group-hover:opacity-70 transition-all duration-500"
+                shadow-md-left-right-bottom group-hover:animate-underline group-hover:opacity-90 transition-all duration-500"
                         />
                     </span>
                 </button>
             ))
             }
+            <ButtonCV />
         </div >
     )
 }

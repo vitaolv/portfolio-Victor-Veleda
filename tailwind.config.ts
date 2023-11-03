@@ -111,8 +111,8 @@ module.exports = {
           'spinCircle': 'spin 2s linear infinite',
           'fadeInScrollWithOpacity': 'fadeInScrollWithOpacity 2s ease-in-out forwards',
           'fadeInScroll': 'fadeInScroll 2s ease-in-out forwards',
-          'underlineAnimationGradient': 'animateGradient 2slinear infinite',
-          
+          'underlineAnimationGradient': 'animateGradient 2s linear infinite',
+          'buttonAnimationGradient': 'animateGradient 2s linear',
         },
 
       colors: {

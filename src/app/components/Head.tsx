@@ -46,7 +46,7 @@ export function Head() {
         const handleScroll = () => {
             const scrolled = window.scrollY;
 
-            if (scrolled > 100) {
+            if (scrolled > 50) {
                 setScrollCount(scrollCount + 1);
                 if (scrollCount >= 2) {
                     setHeaderClass('bg-gray-900 bg-opacity-90 transition-all duration-400 pt-6');
