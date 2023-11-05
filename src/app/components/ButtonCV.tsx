@@ -2,7 +2,7 @@ export function ButtonCV() {
 
     const handleDownloadCV = async () => {
         try {
-            const response = await fetch("../utils/dates/CV/CV_Victor_Veleda.pdf");
+            const response = await fetch("/assets/CV_Victor_Veleda.pdf");
             const blob = await response.blob();
 
             const url = window.URL.createObjectURL(new Blob([blob]))
