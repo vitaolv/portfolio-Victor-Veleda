@@ -1,11 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-type logoProps = {
-  sections: { key: string, value: string }[],
-}
-
-export function Logo({ sections }: logoProps) {
+export function Logo() {
   return (
     <Link href='/'>
       <Image
@@ -13,7 +9,7 @@ export function Logo({ sections }: logoProps) {
         alt="logo"
         width={320}
         height={80}
-        className="h-auto max-h-16 max-w-full w-56 md:w-auto"
+        className="max-h-16 md:min-w-fit w-56"
       />
     </Link>
   );

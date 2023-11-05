@@ -30,7 +30,10 @@ export function ProjetctsList() {
                             <div className="mb-0 flex flex-row gap-8 justify-between mt-8 md:-mb-24">
                                 <Link className="outline-none" href={project.githubLink}>
                                     <div className="mx-auto outline-none font-alt flex flex-col items-center cursor-pointer gap-2">
-                                        <Image className="rounded-full shadow-gradient-green-blue shadow-green-200" src="/portfolio-Victor-Veleda/assets/icons/code.svg" width={40} height={40} alt="Ver código" />
+                                        <Image
+                                            className="rounded-full shadow-gradient-green-blue shadow-green-200"
+                                            src="/portfolio-Victor-Veleda/assets/icons/code.svg"
+                                            width={40} height={40} alt="Ver código" />
                                         <p className="font-alt text-md">Ver código</p>
                                     </div>
                                 </Link>

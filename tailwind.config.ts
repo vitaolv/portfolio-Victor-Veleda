@@ -11,6 +11,11 @@ module.exports = {
   theme: {
     extend: {
 
+      screens: {
+        'screen-menu-min': '1045px',
+        'screen-menu-max': '1045px',
+      },
+
       fontFamily: {
         sans: "var(--font-roboto)",
         alt: "var(--font-bai-jamjuree)",
@@ -173,7 +178,7 @@ module.exports = {
           400: "#36dc81",
           500: "#04d361",
           600: "#04c058",
-          700: "#97C3A9",
+          700: "#79B392",
           800: "#6FB091",
           900: "#025929",
         },
