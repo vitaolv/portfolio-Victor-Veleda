@@ -28,7 +28,7 @@ export function Hero() {
 
           <p className="m-1 font-sans text-lg text-gray-50 md:text-left">
             Clique em <span className="font-alt">&apos;Sobre mim&apos;</span> e <span className="font-alt"> &apos;Competências&apos;</span> no menu e
-            juntar-se à minha missão de criação de experiências web
+            junte-se à minha missão de criação de experiências web
             incríveis.
           </p>
 
