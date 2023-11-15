@@ -147,15 +147,15 @@ export const MyCompetencies: {
                 },
                 {
                     id: 4,
-                    name: "Princípios de código limpo",
+                    name: "Princípios do código limpo",
                     description: `
                     ...
                 `,
-                    icon: "/portfolio-Victor-Veleda/assets/icons/book.svg",
+                    icon: "/portfolio-Victor-Veleda/assets/icons/cleanCode.svg",
                 },
                 {
                     id: 5,
-                    name: "Princípios de arquitetura limpa",
+                    name: "Princípios da arquitetura limpa",
                     description: `
                     ...
                 `,
