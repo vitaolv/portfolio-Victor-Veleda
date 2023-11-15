@@ -14,17 +14,22 @@ export const MyCompetencies: {
             items: [
                 {
                     id: 1,
+                    name: "VSCode (Visual Studio Code)",
+                    description: `
+                    ...
+                `,
+                    icon: "/portfolio-Victor-Veleda/assets/icons/vscode.svg",
+                },
+                {
+                    id: 2,
                     name: "JavaScript",
                     description: `
-                    Um site de e-commerce e um carrinho de compras, onde os usuários podem visualizar 
-                    a página principal, pesquisar os produtos, adicionar produtos, selecionar quantidades,
-                    visualizar os itens no carrinho, remover produtos, calcular o preço total das compras e
-                    finalizar o pedido de compra.
+                    ...
                 `,
                     icon: "/portfolio-Victor-Veleda/assets/icons/js.svg",
                 },
                 {
-                    id: 2,
+                    id: 3,
                     name: "TypeScript",
                     description: `
                     ...
@@ -32,7 +37,7 @@ export const MyCompetencies: {
                     icon: "/portfolio-Victor-Veleda/assets/icons/ts.svg",
                 },
                 {
-                    id: 3,
+                    id: 4,
                     name: "HTML5",
                     description: `
                     ...
@@ -40,7 +45,7 @@ export const MyCompetencies: {
                     icon: "/portfolio-Victor-Veleda/assets/icons/html5.svg",
                 },
                 {
-                    id: 4,
+                    id: 5,
                     name: "CSS3",
                     description: `
                     ...
@@ -48,7 +53,7 @@ export const MyCompetencies: {
                     icon: "/portfolio-Victor-Veleda/assets/icons/css.svg",
                 },
                 {
-                    id: 5,
+                    id: 6,
                     name: "React",
                     description: `
                     ...
@@ -142,7 +147,7 @@ export const MyCompetencies: {
                 },
                 {
                     id: 4,
-                    name: "Princípios de código limpo e de arquitetura limpa",
+                    name: "Princípios de código limpo",
                     description: `
                     ...
                 `,
@@ -150,6 +155,14 @@ export const MyCompetencies: {
                 },
                 {
                     id: 5,
+                    name: "Princípios de arquitetura limpa",
+                    description: `
+                    ...
+                `,
+                    icon: "/portfolio-Victor-Veleda/assets/icons/cleanArchitecture.svg",
+                },
+                {
+                    id: 6,
                     name: "Metodologias Ágeis (incluindo Scrum e Kanban)",
                     description: `
                     ...
