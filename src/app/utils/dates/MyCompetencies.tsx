@@ -75,7 +75,7 @@ export const MyCompetencies: {
                     description: `
                     ...
                 `,
-                    icon: "/portfolio-Victor-Veleda/assets/icons/Redux.svg",
+                    icon: "/portfolio-Victor-Veleda/assets/icons/redux.svg",
                 },
                 {
                     id: 3,
