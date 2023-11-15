@@ -71,6 +71,14 @@ export const MyCompetencies: {
                 },
                 {
                     id: 2,
+                    name: "Redux",
+                    description: `
+                    ...
+                `,
+                    icon: "/portfolio-Victor-Veleda/assets/icons/Redux.svg",
+                },
+                {
+                    id: 3,
                     name: "Bootstrap",
                     description: `
                     ...
@@ -78,7 +86,7 @@ export const MyCompetencies: {
                     icon: "/portfolio-Victor-Veleda/assets/icons/bootstrap.svg",
                 },
                 {
-                    id: 3,
+                    id: 4,
                     name: "Tailwind CSS",
                     description: `
                     ...
@@ -86,7 +94,7 @@ export const MyCompetencies: {
                     icon: "/portfolio-Victor-Veleda/assets/icons/tailwindcss.svg",
                 },
                 {
-                    id: 4,
+                    id: 5,
                     name: "Ant Design",
                     description: `
                     ...
@@ -94,7 +102,7 @@ export const MyCompetencies: {
                     icon: "/portfolio-Victor-Veleda/assets/icons/antDesign.svg",
                 },
                 {
-                    id: 5,
+                    id: 6,
                     name: "SASS",
                     description: `
                     ...
