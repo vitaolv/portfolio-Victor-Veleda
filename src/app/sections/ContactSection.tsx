@@ -18,7 +18,7 @@ export function ContactSection() {
                     </p>
                     <div
                         className="inset-x-0 p-0 h-1 rounded-xl mb-6 w-auto mx-auto animate-underlineAnimationGradient 
-                background-animate bg-gradient-to-r via-green-700 from-blue-100"
+                background-animate bg-gradient-to-r to-green-700 from-blue-100"
                     />
                     <ContactDetailsComponent />
                 </div>
