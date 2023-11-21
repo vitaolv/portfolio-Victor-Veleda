@@ -7,3 +7,5 @@
 Bem-vindo ao meu portfólio! 🚀
 
 Este projeto consiste em uma única página com seções dedicadas a apresentar quem sou, meus projetos, habilidades e informações de contato. Navegue pelas áreas de Home, Sobre mim, Projetos, Competências e Contato para conhecer mais sobre minha jornada no desenvolvimento. Além disso, você encontrará detalhes sobre meus projetos e um botão para baixar meu currículo. Explore e descubra mais sobre minha paixão pelo desenvolvimento e design de software!
+
+[O link deste projeto está disponível, clique aqui.](https://vitaolv.github.io/portfolio-Victor-Veleda/)
