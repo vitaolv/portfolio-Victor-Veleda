@@ -2,19 +2,53 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { Hero } from '@/app/components/Hero';
 
+import { TextSaudation, FrontEndExplorer, introductoryText, journeyIntroductionText } from '@/app/utils/texts/heroTexts';
+
+
 describe('Hero component', () => {
-    it('displays the complete text', () => {
+    it('should have saudation', () => {
         render(<Hero />);
 
-        const header1Elements = screen.getAllByRole('heading');
-        const specificText = /Aqui, você está prestes a embarcar em uma jornada intergaláctica através dos meus projetos, onde cada site é uma estrela brilhante no vasto céu do desenvolvimento de front-end/;
+        const elementHeader1 = screen.getByText(TextSaudation);
+        expect(elementHeader1).toBeInTheDocument();
+    });
 
-        header1Elements.forEach(element => {
-            if (element.textContent) {
-                expect(screen.getByText(element.textContent)).toBeInTheDocument();
-            }
-        });
+    it('should have front-end Explorer', () => {
+        render(<Hero />);
 
-        expect(screen.getByText(specificText)).toBeInTheDocument();
+        const elementHeader2 = screen.getByText(FrontEndExplorer)
+        expect(elementHeader2).toBeInTheDocument();
+    });
+
+    it('should have introductory text', () => {
+        render(<Hero />);
+
+        const elementIntroductoryParagraph = screen.getByText(introductoryText);
+        expect(elementIntroductoryParagraph).toBeInTheDocument();
+    });
+
+    it('should have jorney introduction text', () => {
+        render(<Hero />)
+
+        const elementJorneyParagraph = screen.getByText(journeyIntroductionText);
+        expect(elementJorneyParagraph).toBeInTheDocument();
+    });
+
+    it('should have the words "Sobre mim" and "Competências" in the text', () => {
+        render(<Hero />)
+
+        const elementMissionParagraph = screen.getByTestId('paragraph-hero-3');
+
+        expect(elementMissionParagraph).toHaveTextContent("Sobre mim");
+        expect(elementMissionParagraph).toHaveTextContent("Competências");
+    });
+
+    it('should have the words "Projetos" in the text', () => {
+        render(<Hero />)
+
+        const elementMyProjectsParagraph = screen.getByTestId("paragraph-hero-4");
+
+        expect(elementMyProjectsParagraph).toHaveTextContent("Projetos");
+
     });
 });
