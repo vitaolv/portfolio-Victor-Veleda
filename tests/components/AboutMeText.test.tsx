@@ -4,6 +4,12 @@ import { aboutMeParagraph } from "@/app/utils/texts/aboutMeText";
 
 describe("About Text and image", () => {
 
+    it("should have a image in the card of the section About me.", () => {
+        render(<AboutMeTextComponent />)
+
+
+    })
+
 
     it("should have the text in the section About me.", () => {
         render(<AboutMeTextComponent />)
