@@ -11,8 +11,6 @@ describe("About Text and image", () => {
         aboutMeParagraph.forEach((paragraph) => {
             const elementParagraph = screen.getByTestId(paragraph.id);
             expect(elementParagraph).toBeInTheDocument();
-            console.log('Texto antes do trim:', elementParagraph.textContent);
-            console.log('Texto depois do trim:', elementParagraph.textContent?.trim());
             expect(elementParagraph.textContent?.trim()).toBe(paragraph.text.trim());
         });
     })
