@@ -8,6 +8,7 @@ export function Logo() {
         src="/portfolio-Victor-Veleda/assets/logo.svg"
         alt="logo"
         width={320}
+        priority={true}
         height={80}
         className="max-h-16 md:min-w-fit w-56"
       />

@@ -39,6 +39,7 @@ export function ButtonScrollToTop() {
                         className="mx-auto transform -translate-y-12"
                         src="/portfolio-Victor-Veleda/assets/icons/backToTop.svg"
                         width={48}
+                        priority={true}
                         height={48}
                         alt="backToTop"
                     />

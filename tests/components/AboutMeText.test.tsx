@@ -7,7 +7,8 @@ describe("About Text and image", () => {
     it("should have a image in the card of the section About me.", () => {
         render(<AboutMeTextComponent />)
 
-
+        const img = screen.getByTestId('imageInAboutMe')
+        expect(img).toHaveAttribute("alt", "Vitão")
     })
 
 

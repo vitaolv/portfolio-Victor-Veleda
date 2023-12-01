@@ -75,6 +75,7 @@ export function ButtonBurger() {
           <Image
             src="/portfolio-Victor-Veleda/assets/icons/burger.svg"
             width={8} height={8} alt="menu-burger"
+            priority={true}
             className="h-8 w-8 transform-gpu bg-gray-900 bg-opacity-20 text-green-700 
             transition-transform duration-300 ease-in-out"
           />

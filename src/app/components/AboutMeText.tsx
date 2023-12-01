@@ -10,6 +10,7 @@ export function AboutMeTextComponent() {
                     className="´p-0 m-0 rounded-full border-blue-100 border-2 border-double
                         shadow-gradient-green-blue shadow-blue-200"
                     src="/portfolio-Victor-Veleda/assets/foto-victor.png"
+                    data-testid="imageInAboutMe"
                     width={180}
                     height={80}
                     alt="Vitão"
