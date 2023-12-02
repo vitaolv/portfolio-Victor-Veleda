@@ -1,6 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { ContactDetailsComponent } from "@/app/components/ContactDetailsComponent";
 import { ContactSection } from "@/app/sections/ContactSection";
+import { Contacts } from "@/app/utils/dates/Contacts";
 
 const introductionTextInTheCard = 'Curtindo a minha jornada no mundo do desenvolvimento front-end?';
 const textsInTheCardOfTheContactSection = [
@@ -24,13 +25,23 @@ describe("Info and contact in 'Contato' section.", () => {
         expect(introductionTextInTheCardOfTheContactSection).toHaveTextContent(introductionTextInTheCard)
     })
 
-    it("Shoul have the text in the card of the 'Contato' section", () => {
+    it("Should have the text in the card of the 'Contato' section", () => {
         render(<ContactDetailsComponent />)
 
         textsInTheCardOfTheContactSection.forEach((text) => {
             const elementParagraph = screen.getAllByTestId("textContact");
             const isTextPresent = elementParagraph.some((element) => element.textContent?.includes(text));
             expect(isTextPresent).toBeTruthy();
+        })
+    })
+
+    it("Should have imagens in the card of the 'Contato' section", () => {
+        render(<ContactDetailsComponent />)
+
+        Contacts.forEach((items) => {
+            const icons = screen.getByAltText(items.name);
+            expect(icons).toBeInTheDocument()
+            expect(icons).toHaveAttribute('src', items.icon);
         })
     })
 

@@ -30,6 +30,7 @@ export function ContactDetailsComponent() {
                             <Link href={items.link}>
                                 <Image
                                     className="´p-0 m-0 mx-auto rounded-xl"
+                                    data-testid="iconsInContact"
                                     src={items.icon}
                                     width={50}
                                     height={50}
