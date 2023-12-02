@@ -4,7 +4,7 @@ import { aboutMeParagraph } from "@/app/utils/texts/aboutMeText";
 
 describe("About Text and image", () => {
 
-    it("should have a image in the card of the section About me.", () => {
+    it("Should have a image in the card of the About me section.", () => {
         render(<AboutMeTextComponent />)
 
         const img = screen.getByTestId('imageInAboutMe')
@@ -12,7 +12,7 @@ describe("About Text and image", () => {
     })
 
 
-    it("should have the text in the section About me.", () => {
+    it("Should have the text in the section About me.", () => {
         render(<AboutMeTextComponent />)
 
         aboutMeParagraph.forEach((paragraph) => {

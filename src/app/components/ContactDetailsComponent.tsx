@@ -7,7 +7,7 @@ export function ContactDetailsComponent() {
 
     return (
         <div className="flex flex-col">
-            <p className="w-auto text-lg font-alt text-center mb-4">
+            <p data-testid="textContact" className="w-auto text-lg font-alt text-center mb-4">
                 Entre em contato por meio do <span className="text-green-700">
                     LinkedIn
                 </span> ou <span className="text-green-700">
@@ -19,7 +19,7 @@ export function ContactDetailsComponent() {
                 className="w-auto text-green-700 mb-4 mb-text-lg font-alt text-center">
                 devlveleda@gmail.com
             </a>
-            <p className="w-auto mb-6 text-lg font-alt text-center">
+            <p data-testid="textContact" className="w-auto mb-6 text-lg font-alt text-center">
                 Acompanhe cada passo dessa jornada, siga-me no GitHub e LinkedIn:
             </p>
             <div className="flex flex-row mx-auto items-center max-w-[150px] gap-2">

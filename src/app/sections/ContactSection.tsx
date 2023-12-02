@@ -13,7 +13,7 @@ export function ContactSection() {
                 <div className="ml-4 mr-4 border-2 border-green-700 bg-gray-500 bg-opacity-20 
                 p-6 shadow-gradient-green-blue shadow-green-200 rounded-xl max-w-screen-md mx-auto">
 
-                    <p className="w-auto m-2 font-alt text-blue-100 text-lgPlus">
+                    <p title="introduction-contact" className="w-auto m-2 font-alt text-blue-100 text-lgPlus">
                         Curtindo a minha jornada no mundo do desenvolvimento front-end?
                     </p>
                     <div
