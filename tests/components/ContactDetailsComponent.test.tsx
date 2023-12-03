@@ -1,4 +1,5 @@
-import { render, screen } from "@testing-library/react";
+import { render, screen, waitFor, fireEvent } from "@testing-library/react";
+
 import { ContactDetailsComponent } from "@/app/components/ContactDetailsComponent";
 import { ContactSection } from "@/app/sections/ContactSection";
 import { Contacts } from "@/app/utils/dates/Contacts";
@@ -45,5 +46,14 @@ describe("Info and contact in 'Contato' section.", () => {
         })
     })
 
+    it("Should navigate to the correct link on click", async () => {
+        render(<ContactDetailsComponent />)
 
+        for (const item of Contacts) {
+            const linkElement = screen.getByRole('link', { name: item.name })
+            fireEvent.click(linkElement);
+            expect(linkElement).toBeInTheDocument();
+            expect(linkElement).toHaveAttribute('href', item.link)
+        }
+    })
 })
