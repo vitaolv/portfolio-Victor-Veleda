@@ -1,4 +1,4 @@
-import { render, screen, waitFor, fireEvent } from "@testing-library/react";
+import { render, screen, fireEvent } from "@testing-library/react";
 
 import { ContactDetailsComponent } from "@/app/components/ContactDetailsComponent";
 import { ContactSection } from "@/app/sections/ContactSection";

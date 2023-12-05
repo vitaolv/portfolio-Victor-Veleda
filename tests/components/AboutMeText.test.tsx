@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 import { AboutMeTextComponent } from "@/app/components/AboutMeText";
 import { aboutMeParagraph } from "@/app/utils/texts/aboutMeText";
 
-describe("About Text and image", () => {
+describe('Text and image in "sobre mim" section', () => {
 
     it("Should have a image in the card of the About me section.", () => {
         render(<AboutMeTextComponent />)
