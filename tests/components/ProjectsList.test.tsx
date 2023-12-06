@@ -44,10 +44,14 @@ describe('Projects list, the project description and imagens in the section proj
         });
     });
 
-    it.skip('should have a name of the project', () => {
+    it('should have a name of the project', () => {
         render(<ProjetctsList />);
 
-
+        projects.forEach((item) => {
+            const h1TitleElement = screen.getByText(item.name);
+            expect(h1TitleElement).toBeInTheDocument();
+            expect(h1TitleElement).toHaveTextContent(item.name)
+        });
 
     })
 
