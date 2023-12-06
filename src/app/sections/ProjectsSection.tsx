@@ -9,7 +9,7 @@ export function ProjectsSection() {
         className={"bg=[url(/portfolio-Victor-Veleda/assets/bg-stars.svg)] row-span-4 bg-cover"}
       >
         <div className=" text-center">
-          <h1 className="font-alt text-3xl md:text-6xl font-semibold text-green-700">
+          <h1 data-testid="projects-header1" className="font-alt text-3xl md:text-6xl font-semibold text-green-700">
             Meus projetos
           </h1>
 

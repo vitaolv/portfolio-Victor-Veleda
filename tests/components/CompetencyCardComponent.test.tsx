@@ -9,8 +9,8 @@ describe('Competencies list, text and icons in "Competências" section', () => {
     it('should have title header in "Competências" section', () => {
         render(<CompetenciesSection />)
 
-        const header1InSection = screen.getByRole('heading');
-        expect(header1InSection).toHaveTextContent('Competências');
+        const header1InTheSectionCompetencies = screen.getByRole('heading');
+        expect(header1InTheSectionCompetencies).toHaveTextContent('Competências');
 
     })
 
