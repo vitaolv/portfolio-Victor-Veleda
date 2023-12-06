@@ -30,5 +30,32 @@ describe('Projects list, the project description and imagens in the section proj
         expect(stripesElement).not.toBeInTheDocument();
     })
 
+    it('should have an imagem of the project in projects list', () => {
+        render(<ProjetctsList />);
+
+        projects.forEach((item) => {
+            const img = screen.getByAltText(item.name);
+            expect(img).toBeInTheDocument();
+
+            const srcAttribute = img.getAttribute('src') ?? '';
+            const decodedSrc = decodeURIComponent(srcAttribute);
+            expect(decodedSrc).toContain(item.gif);
+
+        });
+    });
+
+    it.skip('should have a name of the project', () => {
+        render(<ProjetctsList />);
+
+
+
+    })
+
+
+    it.skip('should have text description of the project', () => {
+        render(<ProjetctsList />);
+
+    })
+
 
 })
