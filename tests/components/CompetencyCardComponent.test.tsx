@@ -23,21 +23,33 @@ describe('Competencies list, text and icons in "Competências" section', () => {
         })
     })
 
-    it('should have card, icons and name in card of competencies', () => {
+    it('should have card in competencies section', () => {
         render(<CompetencyCardComponent />)
 
         const divElements = screen.queryAllByTestId('cardCompetencies');
         expect(divElements.length).toBeGreaterThan(0);
+    })
+
+    it('should have icons in the competency card', () => {
+        render(<CompetencyCardComponent />)
+
+        MyCompetencies.forEach((category) => {
+            category.items.forEach((item) => {
+                const icons = screen.getByAltText(item.name)
+                expect(icons).toBeInTheDocument()
+                expect(icons).toHaveAttribute('src', item.icon)
+            })
+        })
+    })
+
+    it('should have name in the competency card', () => {
+        render(<CompetencyCardComponent />)
 
         MyCompetencies.forEach((category) => {
             category.items.forEach((item) => {
                 const name = screen.getByText(item.name)
                 expect(name).toBeInTheDocument()
                 expect(name).toHaveTextContent(item.name)
-
-                const icons = screen.getByAltText(item.name)
-                expect(icons).toBeInTheDocument()
-                expect(icons).toHaveAttribute('src', item.icon)
             })
         })
     })
