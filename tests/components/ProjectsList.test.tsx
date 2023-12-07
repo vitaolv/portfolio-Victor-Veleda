@@ -55,7 +55,6 @@ describe('Projects list, the project description and imagens in the section proj
 
     })
 
-
     it('should have text description of the project', () => {
         render(<ProjetctsList />);
 
@@ -69,7 +68,5 @@ describe('Projects list, the project description and imagens in the section proj
 
         });
     })
-
-
 
 })
