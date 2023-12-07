@@ -56,10 +56,20 @@ describe('Projects list, the project description and imagens in the section proj
     })
 
 
-    it.skip('should have text description of the project', () => {
+    it('should have text description of the project', () => {
         render(<ProjetctsList />);
 
+        projects.forEach((item) => {
+            const h1TitleElement = screen.getByTestId(`text-description-${item.id}`);
+            expect(h1TitleElement).toBeInTheDocument();
+
+            const expectedText = item.description.replace(/\s+/g, ' ').trim();
+
+            expect(h1TitleElement.textContent?.replace(/\s+/g, ' ').trim()).toBe(expectedText);
+
+        });
     })
+
 
 
 })
