@@ -3,7 +3,12 @@ import { ButtonScrollToTop } from "@/app/components/ButtonScrollToTop";
 
 describe("This button componente is responsible for scrolling to the top when clicked", () => {
 
-    it.skip("should have div element", () => {
+    it.skip("should not be visible when scrollY <= 300", () => {
+        render(<ButtonScrollToTop />)
+
+    })
+
+    it.skip("should be visible when scrollY > 300", () => {
         render(<ButtonScrollToTop />)
 
     })
