@@ -1,7 +1,6 @@
 import { projects } from "@/app/utils/dates/MyProjects";
 import { StripesProjectSection } from "./Stripes";
 import Image from "next/image";
-import Link from "next/link";
 import { ButtonToSeeCode } from "./ButtonToSeeCode";
 import { ButtonToSeeDeploy } from "./ButtonToSeeDeploy";
 
