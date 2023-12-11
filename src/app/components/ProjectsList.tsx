@@ -31,14 +31,14 @@ export function ProjetctsList() {
                                         alt={project.name}
                                         src={project.gif}
                                     />
+
                                     <div className="flex flex-col text-justify">
                                         <h2 data-testid='text-title'
                                             className="pb-5 pt-8 text-center font-alt text-lg
                                         text-green-700">{project.name}</h2>
                                         <h2 data-testid={`text-description-${project.id}`}>{projectDescription}</h2>
                                     </div>
-
-                                    <div className="mb-0 flex flex-row gap-8 justify-between mt-8 md:-mb-24">
+                                    <div className="mb-0 flex flex-row gap-8 justify-between mt-8">
                                         <ButtonToSeeDeploy pageLink={project.liveDemogithubLink} />
                                         <ButtonToSeeCode pageLink={project.githubLink} />
                                     </div>
