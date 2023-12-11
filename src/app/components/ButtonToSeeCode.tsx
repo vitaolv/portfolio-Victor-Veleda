@@ -23,8 +23,8 @@ export function ButtonToSeeCode({ pageLink }: ButtonToSeeCodeTypes) {
                 alt="Visualizar"
                 className=""
                 src="/portfolio-Victor-Veleda/assets/icons/code.svg"
-                width={28}
-                height={28}
+                width={26}
+                height={26}
             />
             Ver código
         </button>

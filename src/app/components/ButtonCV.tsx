@@ -29,10 +29,10 @@ export function ButtonCV() {
                 type="button"
                 onClick={handleDownloadCV}
                 className="flex flex-row group relative duration-900 ease-in-out 
-            delay-1000 hover:delay-500 hover:duration-200 justify-center items-center
-            bg-gradient-to-r from-green-700 via-green-700 to-turquoise-200
-            text-gray-800 border-green-700 rounded-lg w-40 font-alt p-2
-            transition-colors motion-safe:hover:from-blue-200 motion-safe:hover:via-green-700 motion-safe:hover:to-green-700">
+                    hover:duration-200 justify-center items-center
+                    bg-gradient-to-r from-green-700 via-green-700 to-turquoise-200
+                    text-gray-800 border-green-700 rounded-lg w-40 font-alt p-2
+                    transition-colors motion-safe:hover:from-blue-200 motion-safe:hover:via-green-700 motion-safe:hover:to-green-700">
 
                 <svg
                     className="fill-current w-4 h-4 mr-2 group-hover:translate-y-1 group-hover:duration-300"
