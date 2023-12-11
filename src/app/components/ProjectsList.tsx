@@ -38,7 +38,7 @@ export function ProjetctsList() {
                                         text-green-700">{project.name}</h2>
                                         <h2 data-testid={`text-description-${project.id}`}>{projectDescription}</h2>
                                     </div>
-                                    <div className="mb-0 flex flex-row gap-8 justify-between mt-8">
+                                    <div className="mb-0 flex flex-col md:flex-row gap-8 justify-between mt-8">
                                         <ButtonToSeeDeploy pageLink={project.liveDemogithubLink} />
                                         <ButtonToSeeCode pageLink={project.githubLink} />
                                     </div>
