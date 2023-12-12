@@ -7,7 +7,7 @@ export function Hero() {
         {TextSaudation}
       </h1>
 
-      <h2 className="mb-6 mt-5 font-alt text-2xl md:text-3xl font-semibold text-blue-100">
+      <h2 className="mb-6 mt-5 font-alt text-2xl md:text-3xl font-semibold text-turquoise-100">
         {FrontEndExplorer}
       </h2>
 

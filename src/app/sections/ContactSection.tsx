@@ -13,12 +13,12 @@ export function ContactSection() {
                 <div className="ml-4 mr-4 border-2 border-green-700 bg-gray-500 bg-opacity-20 
                 p-6 shadow-gradient-green-blue shadow-green-200 rounded-xl max-w-screen-md mx-auto">
 
-                    <p title="introduction-contact" className="w-auto m-2 font-alt text-blue-100 text-lgPlus">
+                    <p title="introduction-contact" className="w-auto m-2 font-alt text-turquoise-100 text-lgPlus">
                         Curtindo a minha jornada no mundo do desenvolvimento front-end?
                     </p>
                     <div
                         className="inset-x-0 p-0 h-1 rounded-xl mb-6 w-auto mx-auto animate-underlineAnimationGradient 
-                background-animate bg-gradient-to-r via-green-700 from-blue-100"
+                background-animate bg-gradient-to-r via-green-700 from-turquoise-100"
                     />
                     <ContactDetailsComponent />
                 </div>
