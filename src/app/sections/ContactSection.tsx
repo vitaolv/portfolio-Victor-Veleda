@@ -4,7 +4,7 @@ import { ContactDetailsComponent } from "../components/ContactDetailsComponent";
 export function ContactSection() {
     return (
         <section id="contato"
-            className="bg-[url(/assets/bg-stars.svg)] 
+            className="bg-[url(/portfolio-Victor-Veleda/assets/bg-stars.svg)] 
             js-show-on-scroll transition-opacity invisible mt-28">
 
             {/* Blur */}
