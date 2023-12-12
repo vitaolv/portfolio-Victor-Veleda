@@ -25,7 +25,7 @@ export function ProjetctsList() {
                                 <div className="flex flex-col items-center md:w-96 mx-auto md:mx-0">
                                     <Image
                                         className=" shadow-gradient-green-blue rounded-2xl 
-                                        border-1 border-blue-50 shadow-green-200"
+                                        border-1 border-blue-50 shadow-turquoise-100"
                                         width={480}
                                         height={80}
                                         alt={project.name}
