@@ -56,7 +56,7 @@ export const projects: {
       A proposta abrange o desenvolvimento de um website utilizando TypeScript com React e SASS, visando fornecer uma plataforma moderna e adaptável às necessidades do setor de saúde. 
       Com a escolha dessas tecnologias, busca-se integrar a robustez do TypeScript com a flexibilidade e eficiência do React, juntamente com o poder de estilização do SASS, proporcionando um ambiente versátil e interativo para atender às demandas específicas desse setor em constante evolução.`,
       sources: [
-        "TypeScript", "React", "Sass",
+        "TypeScript", "React", "NextJS", "Sass",
       ],
       gif: "/portfolio-Victor-Veleda/assets/dev.png",
     },

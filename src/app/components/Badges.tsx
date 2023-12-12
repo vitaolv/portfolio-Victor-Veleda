@@ -12,6 +12,7 @@ export function BadgesComponent({ sources }: BadgesComponentTypes) {
         "Javascript": "#FFD700",
         "Vite": "#7B8FFF",
         "React": "#68DBFB",
+        "NextJS": "#FFFFFF",
         "HTML5": "#E96328",
         "CSS3": "#34B1EC",
         "Redux": "#7A50BE",
