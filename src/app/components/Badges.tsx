@@ -19,7 +19,7 @@ export function BadgesComponent({ sources }: BadgesComponentTypes) {
         "Bootstrap": "#841BFB",
         "Ant Design": "#FFFFFF",
         "TypeScript": "#147DD0",
-        "SASS": "#CC6599",
+        "Sass": "#CC6599",
     }
 
 
