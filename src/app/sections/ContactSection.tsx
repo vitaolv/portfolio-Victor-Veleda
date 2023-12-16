@@ -7,6 +7,13 @@ export function ContactSection() {
             className="bg-[url(/portfolio-Victor-Veleda/assets/bg-stars.svg)] 
             js-show-on-scroll transition-opacity invisible mt-28">
 
+            {/* Blur */}
+            <div
+                className="absolute left-0 bottom-0 h-[180px]
+                w-[240px] -translate-y-1/2 translate-x-1/2 rounded-full bg-purble-800
+                opacity-70 blur-full mx-0 overflow-hidden"
+            />
+
             <div className="mx-auto items-center text-center flex flex-col justify-center mb-36">
                 <h2 className="font-alt text-3xl md:text-6xl text-green-700 mb-12">Contato</h2>
 
