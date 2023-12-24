@@ -33,9 +33,19 @@ describe("This button componente is responsible for scrolling to the top when cl
 
 
 
-    it.skip("should have an icon into the button element", () => {
-        render(<ButtonScrollToTop />)
+    it("should have an icon into the button element", () => {
+        Object.defineProperty(window, 'scrollY', {
+            value: 303
+        });
+        render(<ButtonScrollToTop />);
 
+        act(() => window.dispatchEvent(new Event('scroll')));
+
+        const icon = screen.getByRole("img")
+        expect(icon).toBeInTheDocument();
+
+        const srcAttribute = icon.getAttribute('src');
+        expect(srcAttribute).toContain('backToTop.svg');
     })
 
 
