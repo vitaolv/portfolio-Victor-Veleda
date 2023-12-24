@@ -1,5 +1,5 @@
 
-import { screen, render, fireEvent } from "@testing-library/react";
+import { screen, render } from "@testing-library/react";
 import { ButtonScrollToTop } from "@/app/components/ButtonScrollToTop";
 import { act } from "react-dom/test-utils";
 

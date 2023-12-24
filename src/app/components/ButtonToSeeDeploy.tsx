@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useRouter } from 'next/router'
+import Link from "next/link";
 
 
 interface ButtonToSeeDeployTypes {
@@ -7,19 +7,15 @@ interface ButtonToSeeDeployTypes {
 }
 
 export function ButtonToSeeDeploy({ pageLink }: ButtonToSeeDeployTypes) {
-    const router = useRouter();
-
-    const handleButtonClickToSeeDeploy = async () => {
-        await router.push(pageLink);
-    };
     return (
-        <button
+        <Link
             className="flex hover:shadow-gradient-green-blue hover:duration-400 
             duration-900 ease-in-out transition-shadow hover:shadow-green-700 
             items-center gap-2 w-36 text-center justify-center text-gray-900 
             font-semibold bg-gradient-to-r h-11 to-green-700 from-turquoise-200 rounded-lg"
             type="button"
-            onClick={handleButtonClickToSeeDeploy}>
+            href={pageLink}
+        >
             <Image
                 alt="Visualizar"
                 className=""
@@ -28,6 +24,6 @@ export function ButtonToSeeDeploy({ pageLink }: ButtonToSeeDeployTypes) {
                 height={26}
             />
             Visualizar
-        </button>
+        </Link>
     )
 }
