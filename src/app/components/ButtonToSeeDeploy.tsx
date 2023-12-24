@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import { useRouter } from 'next/router'
 
 
 interface ButtonToSeeDeployTypes {
@@ -9,8 +9,8 @@ interface ButtonToSeeDeployTypes {
 export function ButtonToSeeDeploy({ pageLink }: ButtonToSeeDeployTypes) {
     const router = useRouter();
 
-    const handleButtonClickToSeeDeploy = () => {
-        router.push(pageLink)
+    const handleButtonClickToSeeDeploy = async () => {
+        await router.push(pageLink);
     };
     return (
         <button

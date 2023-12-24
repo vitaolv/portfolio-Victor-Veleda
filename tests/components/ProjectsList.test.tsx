@@ -1,6 +1,11 @@
+
 import { screen, render } from "@testing-library/react";
 import { projects } from "@/app/utils/dates/MyProjects";
 import { ProjetctsList } from "@/app/components/ProjectsList";
+
+jest.mock('next/router', () => ({
+    useRouter: jest.fn(),
+}));
 
 describe('Projects list, the project description and imagens in the section projects', () => {
 

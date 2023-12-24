@@ -1,17 +1,35 @@
-import { screen, render } from "@testing-library/react";
+
+import { screen, render, fireEvent } from "@testing-library/react";
 import { ButtonScrollToTop } from "@/app/components/ButtonScrollToTop";
+import { act } from "react-dom/test-utils";
 
 describe("This button componente is responsible for scrolling to the top when clicked", () => {
 
-    it.skip("should not be visible when scrollY <= 300", () => {
+    it("should not be visible when scrollY <= 300", () => {
+        Object.defineProperty(window, 'scrollY', {
+            value: 280,
+        });
+
         render(<ButtonScrollToTop />)
 
+        const buttonElement = screen.queryByTestId("ButtonScrollToTop-test")
+        expect(buttonElement).not.toBeInTheDocument();
     })
 
-    it.skip("should be visible when scrollY > 300", () => {
-        render(<ButtonScrollToTop />)
 
-    })
+    it("should be visible when scrollY > 300", () => {
+        Object.defineProperty(window, 'scrollY', {
+            value: 303
+        });
+        render(<ButtonScrollToTop />);
+
+        act(() => window.dispatchEvent(new Event('scroll')));
+
+        const buttonElement = screen.getByTestId("ButtonScrollToTop-test");
+        expect(buttonElement).toBeInTheDocument();
+    });
+
+
 
     it.skip("should have an icon into the button element", () => {
         render(<ButtonScrollToTop />)
