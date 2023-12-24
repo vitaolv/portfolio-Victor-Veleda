@@ -12,6 +12,8 @@ describe("This button componente is responsible for scrolling to the top when cl
 
         render(<ButtonScrollToTop />)
 
+        act(() => window.dispatchEvent(new Event('scroll')));
+
         const buttonElement = screen.queryByTestId("ButtonScrollToTop-test")
         expect(buttonElement).not.toBeInTheDocument();
     })
