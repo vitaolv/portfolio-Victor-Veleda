@@ -1,7 +1,9 @@
 
-import { screen, render } from "@testing-library/react";
+import { screen, render, fireEvent, waitFor } from "@testing-library/react";
 import { ButtonScrollToTop } from "@/app/components/ButtonScrollToTop";
 import { act } from "react-dom/test-utils";
+
+const spyScrollTo = jest.fn()
 
 describe("This button componente is responsible for scrolling to the top when clicked", () => {
 
@@ -49,9 +51,27 @@ describe("This button componente is responsible for scrolling to the top when cl
     })
 
 
-    it.skip("when the button is cliked, it should go to the top of the page", () => {
-        render(<ButtonScrollToTop />)
+    it("when the button is clicked, it should go to the top of the page", async () => {
+        render(<ButtonScrollToTop />);
 
-    })
 
+        Object.defineProperty(global.window, 'scrollTo', { value: spyScrollTo });
+        Object.defineProperty(global.window, 'scrollY', { value: 301 });
+
+        act(() => {
+            window.dispatchEvent(new Event('scroll'));
+        });
+
+        const buttonElement = await waitFor(() => {
+            const buttonElement = screen.getByTestId("ButtonScrollToTop-test");
+            return buttonElement
+        }, { timeout: 3000 });
+
+        fireEvent.click(buttonElement);
+
+        expect(spyScrollTo).toHaveBeenCalledWith({
+            top: 0,
+            behavior: 'smooth',
+        });
+    });
 });
