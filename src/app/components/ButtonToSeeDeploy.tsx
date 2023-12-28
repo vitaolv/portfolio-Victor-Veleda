@@ -1,14 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 
-
 interface ButtonToSeeDeployTypes {
+    readonly id: number;
     readonly pageLink: string;
 }
 
-export function ButtonToSeeDeploy({ pageLink }: ButtonToSeeDeployTypes) {
+export function ButtonToSeeDeploy({ pageLink, id }: ButtonToSeeDeployTypes) {
     return (
         <Link
+            data-testid={`testId-${id}`}
             className="flex hover:shadow-gradient-green-blue hover:duration-400 
             duration-900 ease-in-out transition-shadow hover:shadow-green-700 
             items-center gap-2 w-36 text-center justify-center text-gray-900 
@@ -17,7 +18,7 @@ export function ButtonToSeeDeploy({ pageLink }: ButtonToSeeDeployTypes) {
             href={pageLink}
         >
             <Image
-                alt="Visualizar"
+                alt="Visitar o site"
                 className=""
                 src="/portfolio-Victor-Veleda/assets/icons/see.svg"
                 width={26}

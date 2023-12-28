@@ -1,5 +1,4 @@
 export async function HandleDownloadResume() {
-
     try {
         const response = await fetch("/portfolio-Victor-Veleda/assets/CV_Victor_Veleda.pdf");
         const blob = await response.blob();

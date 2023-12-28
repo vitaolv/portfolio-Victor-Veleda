@@ -42,7 +42,7 @@ export function ProjetctsList() {
                                     <BadgesComponent sources={project.sources} />
 
                                     <div className="mb-0 flex flex-col md:flex-row gap-8 justify-between mt-8">
-                                        <ButtonToSeeDeploy pageLink={project.liveDemogithubLink} />
+                                        <ButtonToSeeDeploy pageLink={project.liveDemogithubLink} id={project.id} />
                                         <ButtonToSeeCode pageLink={project.githubLink} />
                                     </div>
                                 </div>
