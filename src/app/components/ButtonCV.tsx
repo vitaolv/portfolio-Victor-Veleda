@@ -1,39 +1,16 @@
+import { HandleDownloadResume } from "../utils/downloads/DownloadResume"
+
 export function ButtonCV() {
-
-    const handleDownloadCV = async () => {
-        try {
-            const response = await fetch("/portfolio-Victor-Veleda/assets/CV_Victor_Veleda.pdf");
-            const blob = await response.blob();
-
-            const url = window.URL.createObjectURL(new Blob([blob]))
-
-            const link = document.createElement("a");
-            link.href = url;
-            link.setAttribute('download', 'CV_Victor_Veleda.pdf')
-            document.body.appendChild(link);
-            link.click();
-
-            window.URL.revokeObjectURL(url);
-        } catch (error) {
-            alert(
-                `Erro ao baixar o CV. Aguarde um pouco 
-                ou entre em contato com administrador para relatar o problema ocorrido.`);
-        }
-    };
-
-
-
     return (
         <div className="mx-auto">
             <button
                 type="button"
-                onClick={handleDownloadCV}
+                onClick={HandleDownloadResume}
                 className="flex flex-row group relative duration-900 ease-in-out 
                     hover:duration-200 justify-center items-center
                     bg-gradient-to-r from-green-700 via-green-700 to-turquoise-200
                     text-gray-800 border-green-700 rounded-lg w-40 font-alt p-2
                     transition-colors motion-safe:hover:from-blue-200 motion-safe:hover:via-green-700 motion-safe:hover:to-green-700">
-
                 <svg
                     data-testid="iconDownload"
                     className="fill-current w-4 h-4 mr-2 group-hover:translate-y-1 group-hover:duration-300"
