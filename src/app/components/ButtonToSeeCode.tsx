@@ -2,12 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 
 interface ButtonToSeeCodeTypes {
+    readonly id: number;
     readonly pageLink: string;
 }
 
-export function ButtonToSeeCode({ pageLink }: ButtonToSeeCodeTypes) {
+export function ButtonToSeeCode({ pageLink, id }: ButtonToSeeCodeTypes) {
     return (
         <Link
+            data-testid={`testId-${id}`}
             className="flex gap-2 w-36 items-center text-center justify-center h-11 border-2 
             font-semibold text-to-green-700 border-t-green-700 border-l-green-700 
             border-b-turquoise-100 border-r-turquoise-100 rounded-lg
@@ -18,7 +20,7 @@ export function ButtonToSeeCode({ pageLink }: ButtonToSeeCodeTypes) {
             href={pageLink}
         >
             <Image
-                alt="Visualizar"
+                alt="Ver código"
                 className=""
                 src="/portfolio-Victor-Veleda/assets/icons/code.svg"
                 width={26}
