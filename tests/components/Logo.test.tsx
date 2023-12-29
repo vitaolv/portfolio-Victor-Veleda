@@ -7,7 +7,6 @@ describe("the logo image should be visible", () => {
 
         const imgElement = screen.getByRole('img');
         expect(imgElement).toBeInTheDocument()
-
     })
 
     it("Testing if the image file is correct", () => {
