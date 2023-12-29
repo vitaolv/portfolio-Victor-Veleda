@@ -1,7 +1,6 @@
 import { screen, render, waitFor } from "@testing-library/react"
 import { projects } from "@/app/utils/dates/MyProjects";
 import { ButtonToSeeDeploy } from "@/app/components/ButtonToSeeDeploy"
-import userEvent from "@testing-library/user-event";
 
 describe("Testing the button to see deploy.", () => {
     const mockPageLink = ['https://vitaolv.github.io/projeto-frontend-web-HTML-CSS/', 'https://vitaolv.github.io/project-vite-react-ecommerce/', ''];

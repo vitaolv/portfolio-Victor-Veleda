@@ -1,4 +1,5 @@
 interface BadgesComponentTypes {
+    readonly id: number;
     readonly sources: string[];
 }
 
@@ -6,7 +7,7 @@ interface ResourceColorsTypes {
     readonly [key: string]: string;
 }
 
-export function BadgesComponent({ sources }: BadgesComponentTypes) {
+export function BadgesComponent({ sources, id }: BadgesComponentTypes) {
 
     const resourceColors: ResourceColorsTypes = {
         "Javascript": "#FFD700",
@@ -24,12 +25,12 @@ export function BadgesComponent({ sources }: BadgesComponentTypes) {
 
 
     return (
-        <div>
+        <div data-testid={`div-badges-${id}`}>
             <p className="font-semibold">Tecnologias utilizadas:</p>
             <div className="flex flex-wrap gap-4 w-auto mx-auto justify-center mt-3">
                 {sources.map((source) => (
                     <div
-                        key={source}
+                        key={id}
                         style={{ borderColor: resourceColors[source] }}
                         className="border-2 w-max p-1 border-turquoise-100 text-md rounded-2xl 
                     text-center items-center">

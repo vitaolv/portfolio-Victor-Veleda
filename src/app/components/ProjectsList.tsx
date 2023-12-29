@@ -39,7 +39,7 @@ export function ProjetctsList() {
                                         <h2 data-testid={`text-description-${project.id}`}>{projectDescription}</h2>
                                     </div>
 
-                                    <BadgesComponent sources={project.sources} />
+                                    <BadgesComponent sources={project.sources} id={project.id} />
 
                                     <div className="mb-0 flex flex-col md:flex-row gap-8 justify-between mt-8">
                                         <ButtonToSeeDeploy pageLink={project.liveDemogithubLink} id={project.id} />
