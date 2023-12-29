@@ -2,7 +2,7 @@ import { AboutMeTextComponent } from "../components/AboutMeText"
 export function AboutMeSection() {
 
     return (
-        <section id="sobre-mim"
+        <section data-testid="aboutMe-test" id="sobre-mim"
             className="items-center text-center bg-[url(/portfolio-Victor-Veleda/assets/bg-stars.svg)]">
 
             <div className="mx-auto p-5 js-show-on-scroll transition-opacity invisible">
@@ -11,9 +11,7 @@ export function AboutMeSection() {
                 rounded-lg border-2 border-turquoise-100 bg-gray-500 bg-opacity-20
                 p-5 shadow-gradient-green-blue shadow-turquoise-100"
                 >
-
                     < AboutMeTextComponent />
-
                 </div>
             </div >
         </section >

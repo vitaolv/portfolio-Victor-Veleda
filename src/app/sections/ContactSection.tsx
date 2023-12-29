@@ -16,8 +16,6 @@ export function ContactSection() {
 
             <div className="mx-auto items-center text-center flex flex-col justify-center mb-36">
                 <h2 className="font-alt text-3xl md:text-6xl text-green-700 mb-12">Contato</h2>
-
-
                 <div className="ml-4 mr-4 border-2 border-green-700 bg-gray-500 bg-opacity-20 
                 p-6 shadow-gradient-green-blue shadow-green-200 rounded-xl max-w-screen-md mx-auto">
 
