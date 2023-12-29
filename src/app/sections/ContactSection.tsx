@@ -11,6 +11,7 @@ export function ContactSection() {
 
             {/* Blur */}
             <div
+                data-testid="blurContactSection-test"
                 className="absolute left-0 bottom-0 h-[180px]
                 w-[240px] -translate-y-1/2 translate-x-1/2 rounded-full bg-purble-800
                 opacity-70 blur-full mx-0 overflow-hidden"
