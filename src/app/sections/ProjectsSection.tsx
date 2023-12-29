@@ -2,7 +2,7 @@ import { ProjetctsList } from "../components/ProjectsList";
 
 export function ProjectsSection() {
   return (
-    <section id="projetos"
+    <section data-testid="projectsSection-test" id="projetos"
       className="bg-[url(/portfolio-Victor-Veleda/assets/bg-stars.svg)] grid min-h-screen 
     grid-rows-2 flex-col bg-gray-900 pt-36">
       <div

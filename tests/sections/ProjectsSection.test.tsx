@@ -13,4 +13,11 @@ describe('The projects section presenting the my projects desenvolviment', () =>
         expect(header1InTheSectionProjects).toBeInTheDocument();
         expect(header1InTheSectionProjects).toHaveTextContent('Meus projetos')
     })
-});
+
+    it("Testing if the stars image is visible within the section.", async () => {
+        render(<ProjectsSection />)
+
+        const header1InTheSectionProjects = screen.getByTestId('projectsSection-test');
+        expect(header1InTheSectionProjects).toHaveClass('bg-[url(/portfolio-Victor-Veleda/assets/bg-stars.svg)]');
+    })
+})
