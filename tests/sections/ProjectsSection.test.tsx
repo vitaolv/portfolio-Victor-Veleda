@@ -6,6 +6,14 @@ jest.mock('next/router', () => ({
 }));
 
 describe('The projects section presenting the my projects desenvolviment', () => {
+    it("Testing if the my projects section is visible within the screen.", () => {
+        render(<ProjectsSection />)
+
+        const sectionElement = screen.getByTestId('projectsSection-test')
+        expect(sectionElement).toBeInTheDocument();
+    });
+
+
     it('should have title header in the section projects', () => {
         render(<ProjectsSection />)
 
