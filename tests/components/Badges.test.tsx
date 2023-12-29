@@ -11,6 +11,26 @@ describe("the badges component should be visible", () => {
         };
     })
 
-    it.skip("Testing if the names is correct within the badge", () => {
-    })
+    it("Testing if the paragraph is visible in the 'Tecnologias utilizadas' part of the 'Meus projetos' section.",
+        () => {
+            for (const item of projects) {
+                render(<BadgesComponent sources={item.sources} id={item.id} />)
+                const pElement = screen.getByTestId(`p-badges-${item.id}`);
+                expect(pElement).toHaveTextContent('Tecnologias utilizadas:')
+            };
+        })
+
+    it("Testing if the stack is visible in each badge of the project",
+        () => {
+            for (const item of projects) {
+                if (item.sources) {
+                    render(<BadgesComponent sources={item.sources} id={item.id} />)
+                    for (const source of item.sources) {
+                        const testId = `${item.id}-${source}`;
+                        const badge = screen.getByTestId(testId);
+                        expect(badge).toHaveTextContent(source);
+                    }
+                }
+            };
+        })
 })

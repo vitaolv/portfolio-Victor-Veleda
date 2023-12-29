@@ -26,11 +26,12 @@ export function BadgesComponent({ sources, id }: BadgesComponentTypes) {
 
     return (
         <div data-testid={`div-badges-${id}`}>
-            <p className="font-semibold">Tecnologias utilizadas:</p>
+            <p data-testid={`p-badges-${id}`} className="font-semibold">Tecnologias utilizadas:</p>
             <div className="flex flex-wrap gap-4 w-auto mx-auto justify-center mt-3">
                 {sources.map((source) => (
                     <div
-                        key={id}
+                        data-testid={`${id}-${source}`}
+                        key={`${id}-${source}`}
                         style={{ borderColor: resourceColors[source] }}
                         className="border-2 w-max p-1 border-turquoise-100 text-md rounded-2xl 
                     text-center items-center">
