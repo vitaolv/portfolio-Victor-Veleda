@@ -2,7 +2,9 @@ import { CompetencyCardComponent } from "../components/CompetencyCardComponent"
 
 export function CompetenciesSection() {
     return (
-        <section id="competencia"
+        <section
+            data-testid="competencies-test"
+            id="competencia"
             className="js-show-on-scroll transition-opacity invisible pt-28 md:pt-48 items-center text-center bg-[url(/portfolio-Victor-Veleda/assets/bg-stars.svg)] pb-4">
 
             <div className="">

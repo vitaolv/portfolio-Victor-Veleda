@@ -1,7 +1,7 @@
 import { ContactSection } from "@/app/sections/ContactSection";
 import { render, screen } from "@testing-library/react";
 
-describe("Testing if the about me section is correct", () => {
+describe("Testing if the contact section is correct", () => {
     it("Testing if the contact section is visible within the screen.", () => {
         render(<ContactSection />)
 
