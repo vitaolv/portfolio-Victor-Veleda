@@ -61,7 +61,7 @@ export function ButtonBurger() {
     <>
       <button
         type="button"
-        className={`absolute right-4 top-5 h-14 rounded-full border-2 border-turquoise-100 p-2 screen-menu-min:hidden outline-none 
+        className={`absolute right-4 top-5 h-14 rounded-full border-2 border-green-700 p-2 screen-menu-min:hidden outline-none 
                         ${isOpen ? "rotate-180 border-2 border-turquoise-100" : "scale-100 border-2 border-green-700 p-2"
           } transition-transform md:flex-grow-0`}
         onClick={handleBurgerClick}

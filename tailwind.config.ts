@@ -111,7 +111,7 @@ module.exports = {
         animation : {
           'none': 'none',
           'underline' : 'animateUnderline 0.6s ease-in',
-          'topOriginMenu': 'translateMenu 0.1s ease-in-out',
+          'topOriginMenu': 'translateMenu 0.14s ease-in-out',
           'spinCircle': 'spin 2s linear infinite',
           'fadeInScrollWithOpacity': 'fadeInScrollWithOpacity 2s ease-in-out forwards',
           'fadeInScroll': 'fadeInScroll 2s ease-in-out forwards',
