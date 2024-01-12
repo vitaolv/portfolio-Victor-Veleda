@@ -19,6 +19,7 @@ export function CompetencyCardComponent() {
                                         height={55}
                                         src={item.icon}
                                         alt={item.name}
+                                        loading="lazy"
                                     />
                                     <p className="font-sans text-left text-md md:text-lg font-medium items-center w-32 sm:w-56 md:w-56">
                                         {item.name}

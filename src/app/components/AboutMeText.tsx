@@ -15,6 +15,7 @@ export function AboutMeTextComponent() {
                     height={80}
                     alt="Vitão"
                     data-noindex="true"
+                    loading="lazy"
                 />
             </div>
 
