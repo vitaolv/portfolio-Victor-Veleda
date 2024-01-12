@@ -18,7 +18,7 @@ export const aboutMeParagraph = [
     },
 
     {
-        id: 4, text: `Atualmente, graduando em Sistemas para Internet com ênfase em Front-End, sou apaixonado pela criação de interfaces incríveis e funcionais,
+        id: 4, text: `Graduado em Sistemas para Internet com ênfase em Front-End, sou apaixonado pela criação de interfaces incríveis e funcionais,
                         transformando ideias em realidade. Cada site que eu crio é como uma nave espacial que leva os usuários a uma experiência única e memorável.
                         Além disso, programo em JavaScript com React, TypeScript e Next.js,
                         buscando constantemente aprender novas ferramentas e atualizar minhas habilidades, como um astronauta curioso e inovador.`},
