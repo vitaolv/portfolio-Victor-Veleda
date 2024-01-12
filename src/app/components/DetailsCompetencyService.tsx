@@ -6,7 +6,7 @@ import { useState } from "react"
 export function DetailsCompetencyService() {
 
     return (
-        <article className="m-14 p-6 flex flex-col mx-auto items-center gap-10 justify-center max-w-5xl">
+        <article className="mt-14 mb=10 ml-14 mr-14 p-6 flex flex-col mx-auto items-center gap-10 justify-center max-w-5xl">
 
             <div className="flex flex-col gap-6 items-center justify-center">
                 <h1
@@ -19,7 +19,7 @@ export function DetailsCompetencyService() {
                 </p>
             </div>
 
-            <div className="flex bg-gray-500 bg-opacity-20 flex-col border-2 pl-12 pr-12 pb-1- pt-10 w-full border=2 shadow-gradient-green-blue
+            <div className="flex bg-gray-500 bg-opacity-20 flex-col border-2 pl-12 pr-12 pb-10 pt-10 w-full border=2 shadow-gradient-green-blue
             shadow-green-700 border-green-700 rounded-xl gap-10 justify-center items-start text-left max-w-5xl">
                 <details
                     className={`transition-transform transform duration-300 w-full`}
