@@ -14,7 +14,7 @@ export function DetailsCompetencyService() {
                     Perguntas Frequentes
                 </h1>
                 <p
-                    className="w-fit max-w-full mx-auto text-lg font-semibold">
+                    className="w-fit font-alt max-w-full mx-auto text-lg font-semibold">
                     Algumas respostas prontas para as perguntas mais comuns sobre meu trabalho:
                 </p>
             </div>
@@ -25,7 +25,7 @@ export function DetailsCompetencyService() {
                     className={`transition-transform transform duration-300 w-full`}
                 >
                     <summary
-                        className="border-b-2 select-none w-auto text-turquoise-100 max-w-5xl 
+                        className="border-b-2 select-none w-auto font-alt text-turquoise-100 max-w-5xl 
                         font-extrabold border-green-700 p-2">
                         Quais são meus serviços?
                     </summary>
@@ -50,7 +50,7 @@ export function DetailsCompetencyService() {
                 >
                     <summary
                         className="border-b-2 select-none text-turquoise-100 
-                        font-extrabold max-w-5xl w-full border-green-700 p-2">
+                        font-extrabold max-w-5xl w-full border-green-700 p-2 font-alt">
                         Quanto tempo estou na área de programação?
                     </summary>
                     <div className="max-w-5xl w-full pt-4">
