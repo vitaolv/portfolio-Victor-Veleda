@@ -57,7 +57,8 @@ export const projects: {
       Aqui, faço uso da ferramenta Redux para gerenciar o estado do componente 'ButtonBurger' em dispositivos com telas menores, como tablets, celulares ou mesmo em janelas de navegador de menor tamanho. 
       Em termos mais simples, o Redux possibilita a transição entre o 'estado fechado' e 'estado aberto' do menu ao clicar no ícone 'burger' para abrir e, em seguida, no ícone 'X' para fechar. Essas mudanças de estado são disparadas (dispatch) por ações (actions) e manipuladas por funções puras (reducers).
       
-      Além disso, você encontrará projetos para explorar e informações de contato, como meu endereço de e-mail, GitHub e LinkedIn. Fique à vontade para entrar em contato, fornecer feedback ou interagir como desejar. Seja muito bem-vindo!`,
+      Além disso, adotei a ferramenta Tailwind CSS neste portfólio, que é uma abordagem utility-first para estilização direta no HTML. Essa ferramenta eficiente proporciona código limpo, flexibilidade e uma estética moderna. Cada classe é escolhida cuidadosamente para garantir eficiência e consistência no desenvolvimento.
+      `,
       sources: [
         "TypeScript", "React", "NextJS", "Tailwind CSS", "Redux",
       ],
