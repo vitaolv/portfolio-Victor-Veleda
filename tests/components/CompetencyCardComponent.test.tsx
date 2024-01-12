@@ -4,17 +4,17 @@ import { CompetenciesSection } from "@/app/sections/CompetenciesSection";
 import { MyCompetencies } from "@/app/utils/dates/MyCompetencies";
 
 
-describe('Competencies list, text and icons in "Competências" section', () => {
+describe('Competencies list, text and icons in "Serviços" section', () => {
 
-    it('should have title header in "Competências" section', () => {
+    it('should have title header in "Serviços" section', () => {
         render(<CompetenciesSection />)
 
         const header1InTheSectionCompetencies = screen.getByRole('heading');
-        expect(header1InTheSectionCompetencies).toHaveTextContent('Competências');
+        expect(header1InTheSectionCompetencies).toHaveTextContent('Serviços');
 
     })
 
-    it('should have text in "Competências" section', () => {
+    it('should have text in "Serviços" section', () => {
         render(<CompetencyCardComponent />)
 
         MyCompetencies.forEach((item) => {

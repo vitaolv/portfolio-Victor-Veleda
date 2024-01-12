@@ -33,13 +33,13 @@ describe('Hero component', () => {
         expect(elementJorneyParagraph).toBeInTheDocument();
     });
 
-    it('should have the words "Sobre mim" and "Competências" in the text', () => {
+    it('should have the words "Sobre mim" and "Serviços" in the text', () => {
         render(<Hero />)
 
         const elementMissionParagraph = screen.getByTestId('paragraph-hero-3');
 
         expect(elementMissionParagraph).toHaveTextContent("Sobre mim");
-        expect(elementMissionParagraph).toHaveTextContent("Competências");
+        expect(elementMissionParagraph).toHaveTextContent("Serviços");
     });
 
     it('should have the words "Projetos" in the text', () => {

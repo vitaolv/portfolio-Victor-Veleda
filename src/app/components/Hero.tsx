@@ -26,7 +26,7 @@ export function Hero() {
           </p>
 
           <p data-testid="paragraph-hero-3" className="m-1 font-sans text-lg text-gray-50 md:text-left">
-            Clique em <span className="font-alt">&apos;Sobre mim&apos;</span> e <span className="font-alt"> &apos;Competências&apos;</span> no menu e
+            Clique em <span className="font-alt">&apos;Sobre mim&apos;</span> e <span className="font-alt"> &apos;Serviços&apos;</span> no menu e
             junte-se à minha missão de criação de experiências web
             incríveis.
           </p>

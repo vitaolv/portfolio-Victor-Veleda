@@ -5,7 +5,7 @@ export const sections: { key: string, value: string }[] = [{
 }, {
     key: "Projetos", value: "projetos"
 }, {
-    key: "Competências", value: "competencia"
+    key: "Serviços", value: "competencia"
 }, {
     key: "Contato", value: "contato"
 }];
