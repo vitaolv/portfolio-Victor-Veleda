@@ -61,14 +61,14 @@ export function ButtonBurger() {
     <>
       <button
         type="button"
-        className={`absolute right-4 top-5 h-14 rounded-full border-2 border-blue-100 p-2 screen-menu-min:hidden outline-none 
-                        ${isOpen ? "rotate-180 border-2 border-blue-100" : "scale-100 border-2 border-green-700 p-2"
+        className={`absolute right-4 top-5 h-14 rounded-full border-2 border-turquoise-100 p-2 screen-menu-min:hidden outline-none 
+                        ${isOpen ? "rotate-180 border-2 border-turquoise-100" : "scale-100 border-2 border-green-700 p-2"
           } transition-transform md:flex-grow-0`}
         onClick={handleBurgerClick}
         ref={menuRef}
       >
         {isOpen ? (
-          <p className="h-8 w-8 bg-gray-900 bg-opacity-20 font-alt text-2xl text-blue-100">
+          <p className="h-8 w-8 bg-gray-900 bg-opacity-20 font-alt text-2xl text-turquoise-100">
             X
           </p>
         ) : (
@@ -84,7 +84,7 @@ export function ButtonBurger() {
       {isOpen ? (
         <div
           className="pb-6 origin-top animate-topOriginMenu pt-2 left-0 right-0 top-24 w-full h-50
-        flex flex-col rounded-lg border-2 border-blue-50 bg-gray-900 absolute transform
+        flex flex-col rounded-lg border-2 border-turquoise-100 bg-gray-900 absolute transform
         duration-500 ease-in-out transition-transform md:flex"
         >
           <MenuNavigation />
