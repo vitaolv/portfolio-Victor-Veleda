@@ -51,7 +51,9 @@ export function Header() {
 
 
     return (
-        <div className={`fixed h-28 top-0 left-0 right-0 p-6 pl-1 pr-12 md:pl-2 w-auto
+        <div
+            data-testid="header-test"
+            className={`fixed h-28 top-0 left-0 right-0 p-6 pl-1 pr-12 md:pl-2 w-auto
         items-center z-50 ${headerClass}`} >
             <div className="flex justify-between gap-1 ml-4">
                 <Logo />

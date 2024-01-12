@@ -52,7 +52,6 @@ module.exports = {
             'background': 'linear-gradient(to right, #34d399, #38bdf8, #6ee7b7, #93c5fd)',
           },
           
-
           translateMenu: {
             '0%': {
             transform: 'scaleY(0)', opacity: "0%"},
