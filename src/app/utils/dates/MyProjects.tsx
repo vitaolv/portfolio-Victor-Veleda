@@ -62,7 +62,7 @@ export const projects: {
       sources: [
         "TypeScript", "React", "NextJS", "Tailwind CSS", "Redux",
       ],
-      gif: "/portfolio-Victor-Veleda/assets/portfolio-vitao.gif",
+      gif: "/portfolio-Victor-Veleda/assets/videos/portfolio-vitao.gif",
     },
     {
       id: 4,
