@@ -6,7 +6,7 @@ export function CompetenciesSection() {
         <section
             data-testid="competencies-test"
             id="competencia"
-            className=" pt-28 md:pt-48 items-center text-center bg-[url(/portfolio-Victor-Veleda/assets/bg-stars.svg)] pb-4">
+            className="mx=auto pt-28 md:pt-48 items-center text-center bg-[url(/portfolio-Victor-Veleda/assets/bg-stars.svg)] pb-4">
 
             <div className="">
                 <h2 className="font-alt text-3xl md:text-6xl text-green-700" >Competências</h2>

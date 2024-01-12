@@ -6,7 +6,7 @@ import { useState } from "react"
 export function DetailsCompetencyService() {
 
     return (
-        <article className="mt-14 mb=10 ml-14 mr-14 p-6 flex flex-col mx-auto items-center gap-10 justify-center max-w-5xl">
+        <article className="m-12 p-6 flex flex-col mx-auto items-center gap-10 justify-center max-w-5xl">
 
             <div className="flex flex-col gap-6 items-center justify-center">
                 <h1
