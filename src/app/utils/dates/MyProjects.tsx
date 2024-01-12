@@ -48,6 +48,23 @@ export const projects: {
     },
     {
       id: 3,
+      name: "Aqui, você está visualizando neste portfólio!",
+      githubLink: "https://github.com/vitaolv/portfolio-Victor-Veleda",
+      liveDemogithubLink: "/",
+      description: `
+      Você está explorando e conhecendo meu trabalho neste exato momento por meio deste portfólio! 
+      A proposta deste espaço é disponibilizar meu currículo, apresentar meu trabalho como desenvolvedor front-end e permitir que você me conheça um pouco melhor.
+      Aqui, faço uso da ferramenta Redux para gerenciar o estado do componente 'ButtonBurger' em dispositivos com telas menores, como tablets, celulares ou mesmo em janelas de navegador de menor tamanho. 
+      Em termos mais simples, o Redux possibilita a transição entre o 'estado fechado' e 'estado aberto' do menu ao clicar no ícone 'burger' para abrir e, em seguida, no ícone 'X' para fechar. Essas mudanças de estado são disparadas (dispatch) por ações (actions) e manipuladas por funções puras (reducers).
+      
+      Além disso, você encontrará projetos para explorar e informações de contato, como meu endereço de e-mail, GitHub e LinkedIn. Fique à vontade para entrar em contato, fornecer feedback ou interagir como desejar. Seja muito bem-vindo!`,
+      sources: [
+        "TypeScript", "React", "NextJS", "Tailwind CSS", "Redux",
+      ],
+      gif: "/portfolio-Victor-Veleda/assets/dev.png",
+    },
+    {
+      id: 4,
       name: "Em breve",
       githubLink: "",
       liveDemogithubLink: "",
