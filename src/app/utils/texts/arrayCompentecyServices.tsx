@@ -5,9 +5,8 @@ export const listServices: string[] = [
     'Implementação de soluções performáticas, seguindo as melhores práticas.',
     'Manutenção, evolução e otimização de interfaces existentes conforme necessário.',
     'Aplicação da biblioteca Redux em projetos.',
-    'Construção e desenvolvimento de plataformas.',
-    'Elaboração, desenvolvimento e documentação de testes automatizados.',
-    'Realização de testes unitários com Jest.',
+    'Elaboração, desenvolvimento e documentação de Storybook.',
+    'Realização de testes unitários com Jest e de testes automatizados.',
     'Utilização do GitHub.',
     'Auxílio nos processos de desenvolvimento, garantindo a qualidade e a manutenção dos sistemas já existentes, por meio de testes e de acordo com metodologias estabelecidas.',
 ]
