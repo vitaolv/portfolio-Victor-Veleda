@@ -8,9 +8,9 @@ import { BadgesComponent } from "./Badges";
 export function ProjetctsList() {
 
     return (
-        <div className="relative mt-12 m-6">
-            <div className="grid grid-cols-1 md:grid-rows-2 gap-0">
-                {projects.map((project, index) => {
+        <div className="relative mt-12 m-6 max-w-6xl mx-auto p-16">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-40 gap-y-16">
+                {projects.map((project) => {
 
                     const projectDescription = project.description.split('\n').map((paragraph) =>
                         <p className="mb-4" key={paragraph}>{paragraph}</p>
@@ -20,7 +20,7 @@ export function ProjetctsList() {
                         <ul key={project.id}>
                             <li
                                 className={`js-show-on-scroll transition-opacity invisible mt-6 flex 
-                            flex-col justify-center md:justify-evenly ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse '}`}
+                            flex-col mx-auto justify-center md:justify-evenly md:flex-row`}
                             >
                                 <div className="flex flex-col items-center md:w-96 mx-auto md:mx-0">
                                     <Image
@@ -46,11 +46,7 @@ export function ProjetctsList() {
                                         <ButtonToSeeCode pageLink={project.githubLink} id={project.id} />
                                     </div>
                                 </div>
-                                <div
-                                    className="h-[80px] w-[400px] 
-                                    rounded-full bg-transparent bg-opacity-50 blur-[0px]"
-                                    z-index="-1"
-                                />
+
                             </li>
                         </ul>
                     );
