@@ -19,7 +19,7 @@ export function StripesProjectSection() {
     return (
         <>
             {windowWidth > 1023 &&
-                <div data-testid='stripes-in-section-projects' className="absolute left-1/2 top-0 w-3 bg-stripes h-[3840px]" />
+                <div data-testid='stripes-in-section-projects' className="absolute left-1/2 top-0 w-3 bg-stripes h-[2840px]" />
             }
         </>
     )
