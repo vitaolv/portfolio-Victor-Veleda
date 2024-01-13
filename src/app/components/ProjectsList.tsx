@@ -8,7 +8,7 @@ import { BadgesComponent } from "./Badges";
 export function ProjetctsList() {
 
     return (
-        <div className="relative mt-12 m-6 max-w-6xl mx-auto p-16">
+        <div className="relative mt-8 m-6 max-w-6xl mx-auto p-16">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-40 gap-y-16">
                 {projects.map((project) => {
 
