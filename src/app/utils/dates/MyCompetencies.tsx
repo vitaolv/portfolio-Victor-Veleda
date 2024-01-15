@@ -108,7 +108,7 @@ export const MyCompetencies: {
                 },
                 {
                     id: 6,
-                    name: "SASS",
+                    name: "Sass",
                     description: `
                     ...
                 `,
