@@ -28,11 +28,9 @@ export default function HomePage() {
             <div className="row-span-6 grid min-h-screen">
                 {/* Sections */}
                 <HeroSection />
-                <AboutMeSection />
                 <ProjectsSection />
                 <CompetenciesSection />
-                <ContactSection />
-
+                <AboutMeSection />
             </div>
             {isBurgerOpen && <div className="escurecer fixed inset-0" onClick={handleCloseOnAnyClick} />}
         </div>
