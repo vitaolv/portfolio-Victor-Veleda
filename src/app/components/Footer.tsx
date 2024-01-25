@@ -9,7 +9,8 @@ export function Footer() {
         className="border-t-2 border-green-700 flex flex-col-reverse sm:flex-row gap-4 sm:gap-10 text-gray-250 
       bg-gray-900 font-alt text-center px-6 mt-6 mb-6 transition-colors justify-center items-center"
       >
-        <div className="self-center mx-auto m-3 text-md">
+        <div className="bg-[url(/portfolio-Victor-Veleda/assets/bg-stars.svg)]
+        self-center mx-auto m-3 text-md js-show-on-scroll transition-opacity invisible">
           <p>Obrigado por visitar nosso site!</p>
           <div
             className="inset-x-0 p-0 h-1 rounded-xl mb-2 w-auto mx-auto 
@@ -26,7 +27,7 @@ export function Footer() {
       </div>
       <p data-testid="textFooter-test"
         className="text-sm col-span-2 self-center border-2 border-green-700 shadow-gradient-green-blue
-      shadow-green-700 rounded-lg w-full sm:w-fit break-words p-3 mx-auto mb-4">
+      shadow-green-700 rounded-lg w-fit break-words p-3 mx-auto mb-4">
         © 2023-2024 Victor Veleda. Todos os direitos reservados.
       </p>
     </div>
