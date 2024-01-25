@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export function CompetencyCardComponent() {
     return (
-        <>
+        <div>
             {MyCompetencies.map((category) => (
                 <div key={category.id} className="max-w-md mx-auto p-4">
                     <p className="font-alt text-xl mt-6 mb-3 md:h-16 w-auto sm:w-96 md:w-96 h-auto text-center">
@@ -30,6 +30,13 @@ export function CompetencyCardComponent() {
                     </div>
                 </div>
             ))}
-        </>
+            {/* Blur */}
+            <div
+                data-testid="blurContactSection-test"
+                className="absolute left-0 bottom-0 h-[180px]
+                w-[240px] -translate-y-1/2 translate-x-1/2 rounded-full bg-purble-800
+                opacity-70 blur-full mx-0 overflow-hidden"
+            />
+        </div>
     );
 }
