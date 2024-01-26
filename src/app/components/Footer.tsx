@@ -16,7 +16,9 @@ export function Footer() {
                 bg-gradient-to-r via-green-700 from-turquoise-100"
           />
           <p className="text-sm">Espero que tenha apreciado a navegação pelo universo do desenvolvimento front-end.</p>
-          <p className="text-sm">Até a próxima! <span className="text-3xl pt-4">👋🏼</span></p>
+          <p className="text-sm">Até a próxima!
+            <span className="text-3xl pt-4 animate-waveHand inline-block transform origin-center">👋🏼</span>
+          </p>
         </div>
 
         <div className="self-center mx-auto pt-8 pb-6 pr-10 pl-10 sm:pr-14 sm:pl-14">

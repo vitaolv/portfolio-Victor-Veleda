@@ -28,7 +28,19 @@ module.exports = {
           'md-left-right-bottom': '2px 0px 8px -1px rgba(151, 195, 169, 1), -2px 0px 9px -1px rgba(92, 182, 235, 1), 0 2px 6px -1px rgba(151, 195, 169, 1)',
         },
 
-        keyframes: {
+      animation : {
+          'none': 'none',
+          'waveHand': 'waveHand 2s infinite',
+          'underline' : 'animateUnderline 0.6s ease-in',
+          'topOriginMenu': 'translateMenu 0.14s ease-in-out',
+          'spinCircle': 'spin 2s linear infinite',
+          'fadeInScrollWithOpacity': 'fadeInScrollWithOpacity 2s ease-in-out forwards',
+          'fadeInScroll': 'fadeInScroll 2s ease-in-out forwards',
+          'underlineAnimationGradient': 'animateGradient 2s linear infinite',
+          'buttonAnimationGradient': 'animateGradient 2s linear',
+        },
+
+      keyframes: {
           animateUnderline: {
             '0%': {
               transform: 'scaleX(0)'},
@@ -106,19 +118,17 @@ module.exports = {
             '100%': {
               transform: 'rotate(360deg)'
             }
+          },
+          waveHand: {
+            '0%': { transform: 'rotate(0deg) translateY(0)' },
+            '10%': { transform: 'rotate(14deg) translateY(-8%)' },
+            '20%': { transform: 'rotate(-8deg) translateY(8%)' },
+            '30%': { transform: 'rotate(14deg) translateY(-4%)' },
+            '40%': { transform: 'rotate(-4deg) translateY(4%)' },
+            '50%': { transform: 'rotate(10deg) translateY(-2%)' },
+            '60%': { transform: 'rotate(0deg) translateY(2%)' },
+            '100%': { transform: 'rotate(0deg) translateY(0)' },
           }
-
-        },
-
-        animation : {
-          'none': 'none',
-          'underline' : 'animateUnderline 0.6s ease-in',
-          'topOriginMenu': 'translateMenu 0.14s ease-in-out',
-          'spinCircle': 'spin 2s linear infinite',
-          'fadeInScrollWithOpacity': 'fadeInScrollWithOpacity 2s ease-in-out forwards',
-          'fadeInScroll': 'fadeInScroll 2s ease-in-out forwards',
-          'underlineAnimationGradient': 'animateGradient 2s linear infinite',
-          'buttonAnimationGradient': 'animateGradient 2s linear',
         },
 
       colors: {
