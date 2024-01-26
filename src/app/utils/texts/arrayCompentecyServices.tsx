@@ -7,6 +7,7 @@ export const listServices: string[] = [
     'Aplicação da biblioteca Redux em projetos.',
     'Elaboração, desenvolvimento e documentação de Storybook.',
     'Realização de testes unitários com Jest e de testes automatizados.',
+    'Trabalhar na integração e na conexão entre o front-end e o back-end utilizando o framework Axios.',
     'Utilização do GitHub.',
     'Auxílio nos processos de desenvolvimento, garantindo a qualidade e a manutenção dos sistemas já existentes, por meio de testes e de acordo com metodologias estabelecidas.',
 ]
