@@ -20,14 +20,14 @@ export function Footer() {
           <p className="text-sm">Até a próxima! <span className="text-3xl pt-4">👋🏼</span></p>
         </div>
 
-        <div className="self-center mx-auto p-1 sm:p-12">
+        <div className="self-center mx-auto pt-8 pb-6 pr-10 pl-10 sm:pr-14 sm:pl-14">
           <ContactSection />
         </div>
 
       </div>
       <p data-testid="textFooter-test"
-        className="text-sm col-span-2 self-center border-2 border-green-700 shadow-gradient-green-blue
-      shadow-green-700 rounded-lg w-fit break-words p-3 mx-auto mb-4">
+        className="text-md col-span-2 self-center border-t-2 border-green-700
+        rounded-lg w-screen break-words p-4">
         © 2023-2024 Victor Veleda. Todos os direitos reservados.
       </p>
     </div>
