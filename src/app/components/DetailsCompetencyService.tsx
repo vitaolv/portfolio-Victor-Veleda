@@ -30,9 +30,9 @@ export function DetailsCompetencyService() {
 
                     <div className="">
                         <p
-                            className="pt-3 max-w-5xl leading-normal text-justify">
+                            className="pt-3 max-w-5xl leading-normal">
                             Desenvolvo atividades por meio de projetos práticos, como:
-                            <ul className="p-4">
+                            <ul className="p-4 mb-2">
                                 {listServices.map((item: string, index: number) => (
                                     <li key={index} className="leading-loose">
                                         <span className=" font-black text-turquoise-100">•</span> {item}
@@ -63,7 +63,6 @@ export function DetailsCompetencyService() {
                         </p>
                     </div>
                 </details>
-
             </div>
         </article >
     )
