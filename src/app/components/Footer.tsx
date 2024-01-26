@@ -12,12 +12,12 @@ export function Footer() {
         self-center mx-auto m-3 text-md js-show-on-scroll transition-opacity invisible">
           <p>Obrigado por visitar nosso site!</p>
           <div
-            className="inset-x-0 p-0 h-1 rounded-xl mb-2 w-auto mx-auto 
+            className="inset-x-0 p-0 h-1 rounded-xl mb-4 w-auto mx-auto 
                 bg-gradient-to-r via-green-700 from-turquoise-100"
           />
           <p className="text-sm">Espero que tenha apreciado a navegação pelo universo do desenvolvimento front-end.</p>
           <p className="text-sm">Até a próxima!
-            <span className="text-3xl ml-3 pt-4 animate-waveHand inline-block transform origin-center">👋🏼</span>
+            <span className="text-3xl ml-2 pt-1 animate-waveHand inline-block transform origin-center">👋🏼</span>
           </p>
         </div>
 
