@@ -6,7 +6,7 @@ export function ContactSection() {
         <section
             data-testid="contactSection-test"
             id="contato"
-            className="bg-[url(/portfolio-Victor-Veleda/assets/bg-stars.svg)] mt-8 mb-4 sm:mb-10">
+            className="bg-[url(/portfolio-Victor-Veleda/assets/bg-stars.svg)] mt-5 mb-2 sm:mb-10">
 
             <div className="js-show-on-scroll transition-opacity invisible ">
 
