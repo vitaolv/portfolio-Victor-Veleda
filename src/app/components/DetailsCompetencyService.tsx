@@ -1,8 +1,6 @@
 import { listServices } from "../utils/texts/arrayCompentecyServices"
 import { textMyExperiences } from "../utils/texts/arrayMyExperienciesText"
 
-import { useState } from "react"
-
 export function DetailsCompetencyService() {
 
     return (
@@ -32,7 +30,7 @@ export function DetailsCompetencyService() {
 
                     <div className="">
                         <p
-                            className="pt-3 max-w-5xl leading-normal">
+                            className="pt-3 max-w-5xl leading-normal text-justify">
                             Desenvolvo atividades por meio de projetos práticos, como:
                             <ul className="p-4">
                                 {listServices.map((item: string, index: number) => (
@@ -54,18 +52,15 @@ export function DetailsCompetencyService() {
                         Quanto tempo estou na área de programação?
                     </summary>
                     <div className="max-w-5xl w-full pt-4">
-                        <p>
-                            <p className="max-w-5xl leading-normal">
-                                <ul className="">
-                                    {textMyExperiences.map((item: string, index: number) => (
-                                        <li key={index} className="leading-loose pt-3">
-                                            {item}
-                                        </li>
-                                    ))}
-                                </ul>
-                            </p>
+                        <p className="max-w-5xl leading-normal text-justify">
+                            <ul className="">
+                                {textMyExperiences.map((item: string, index: number) => (
+                                    <li key={index} className="leading-loose pt-3">
+                                        {item}
+                                    </li>
+                                ))}
+                            </ul>
                         </p>
-
                     </div>
                 </details>
 
