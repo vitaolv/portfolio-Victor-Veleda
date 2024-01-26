@@ -17,7 +17,7 @@ export function Footer() {
           />
           <p className="text-sm">Espero que tenha apreciado a navegação pelo universo do desenvolvimento front-end.</p>
           <p className="text-sm">Até a próxima!
-            <span className="text-3xl pt-4 animate-waveHand inline-block transform origin-center">👋🏼</span>
+            <span className="text-3xl ml-4 pt-4 animate-waveHand inline-block transform origin-center">👋🏼</span>
           </p>
         </div>
 
