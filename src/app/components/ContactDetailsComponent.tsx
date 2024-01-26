@@ -10,11 +10,11 @@ export function ContactDetailsComponent() {
             <a
                 href="mailto:devlveleda@gmail.com"
                 className="w-auto text-gray-50 transition-colors visited:text-gray-50 hover:text-green-700
-                 mb-4 mb-text-lg font-alt text-center underline underline-offset-2">
+                mb-6 mb-text-lg font-alt text-center underline underline-offset-2">
                 devlveleda@gmail.com
             </a>
 
-            <div className="flex flex-col sm:flex-row mx-auto items-center justify-center max-w-[150px] gap-4">
+            <div className="flex m-2 flex-col sm:flex-row mx-auto items-center justify-center max-w-[150px] gap-4">
                 {Contacts.map((items) => (
                     <ul key={items.id} className="mx-auto">
                         <li className="mx-auto">

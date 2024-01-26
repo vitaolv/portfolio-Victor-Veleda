@@ -22,6 +22,8 @@ module.exports = {
       },
 
       boxShadow: {
+          'inset-top-about-me-sm': 'inset 0 120px #101010',
+          'inset-top-about-me': 'inset 0 180px #101010',
           'gradient-green-blue': '0 0 5px 2px linear-gradient(to right, #97C3A9, #B6DFF6)',
           'md-left-right-bottom': '2px 0px 8px -1px rgba(151, 195, 169, 1), -2px 0px 9px -1px rgba(92, 182, 235, 1), 0 2px 6px -1px rgba(151, 195, 169, 1)',
         },

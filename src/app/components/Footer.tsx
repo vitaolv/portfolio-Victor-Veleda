@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { ContactSection } from "../sections/ContactSection";
 export function Footer() {
   return (
@@ -7,7 +6,7 @@ export function Footer() {
       className="items-center text-center">
       <div
         className="border-t-2 border-green-700 flex flex-col-reverse sm:flex-row gap-4 sm:gap-10 text-gray-250 
-      bg-gray-900 font-alt text-center px-6 mt-6 mb-6 transition-colors justify-center items-center"
+      bg-gray-900 font-alt text-center px-6 mb-6 transition-colors justify-center items-center"
       >
         <div className="bg-[url(/portfolio-Victor-Veleda/assets/bg-stars.svg)]
         self-center mx-auto m-3 text-md js-show-on-scroll transition-opacity invisible">
