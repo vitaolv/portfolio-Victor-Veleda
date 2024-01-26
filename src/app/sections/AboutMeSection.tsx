@@ -3,7 +3,7 @@ export function AboutMeSection() {
 
     return (
         <section data-testid="aboutMe-test" id="sobre-mim"
-            className="items-center text-center bg-[url(/portfolio-Victor-Veleda/assets/bg-stars.svg)]">
+            className="items-center pt-10 text-center bg-[url(/portfolio-Victor-Veleda/assets/bg-stars.svg)]">
 
             <div className="mx-auto bg-gray-800 shadow-inset-top-about-me
             sm:shadow-inset-top-about-me-sm shadow-gray-900 
