@@ -1,11 +1,14 @@
-import { HandleDownloadResume } from "../utils/downloads/DownloadResume"
+import { useDownloadResume } from "../utils/downloads/DownloadResume"
 
 export function ButtonCV() {
+
+    const handleDownloadResume = useDownloadResume();
+
     return (
         <div className="mx-auto">
             <button
                 type="button"
-                onClick={HandleDownloadResume}
+                onClick={handleDownloadResume}
                 className="flex flex-row group relative duration-900 ease-in-out 
                     hover:duration-200 justify-center items-center
                     bg-gradient-to-r from-green-700 via-green-700 to-turquoise-200

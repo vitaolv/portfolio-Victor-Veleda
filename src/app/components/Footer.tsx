@@ -4,6 +4,7 @@ export function Footer() {
     <div
       data-testid="divFooter-test"
       className="items-center text-center">
+
       <div
         className="border-t-2 border-green-700 flex flex-col-reverse sm:flex-row gap-4 sm:gap-10 text-gray-250 
       bg-gray-900 font-alt text-center px-6 mb-6 transition-colors justify-center items-center"

@@ -10,11 +10,12 @@ import { useSelector, useDispatch } from 'react-redux';
 
 import { RootState } from "../store";
 import { CompetenciesSection } from "../sections/CompetenciesSection";
-import { ContactSection } from "../sections/ContactSection";
+import { NotificationComponent } from "../components/Notification";
 
 
 export default function HomePage() {
     const isBurgerOpen = useSelector((state: RootState) => state.menuBurger.menuIsOpen);
+    const isNotification = useSelector((state: RootState) => state.notification);
     const dispatch = useDispatch();
 
     const handleCloseOnAnyClick = () => {
@@ -32,6 +33,7 @@ export default function HomePage() {
                 <CompetenciesSection />
                 <AboutMeSection />
             </div>
+            {isNotification && <NotificationComponent />}
             {isBurgerOpen && <div className="escurecer fixed inset-0" onClick={handleCloseOnAnyClick} />}
         </div>
     );
