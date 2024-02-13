@@ -8,7 +8,7 @@ export function AboutMeTextComponent() {
             w-full h-56 sm:h-32 border-2 top-12 sm:top-10 border-green-700 rounded-2xl
             bg-gray-800 bg-opacity-30 shadow-green-700 shadow-gradient-green-blue mb-1 absolute z-10"
             />
-            <div className="flex flex-col mb-10 sm:mb-6  sm:flex-row items-center mt-5 relative z-20">
+            <div className="flex flex-col mb-10 sm:mb-6 sm:flex-row items-center mt-5 relative z-20">
                 <div className="ml=0 sm:ml-10 items-center text-center w-fit border-turquoise-100 border-2 border-double 
                         shadow-gradient-green-blue rounded-full p-1 shadow-turquoise-100"
                 >
