@@ -7,12 +7,6 @@ export function ContactDetailsComponent() {
 
     return (
         <div className="flex flex-col items-center justify-center">
-            <a
-                href="mailto:devlveleda@gmail.com"
-                className="w-auto text-gray-50 transition-colors visited:text-gray-50 hover:text-green-700
-                mb-6 mb-text-lg font-alt text-center underline underline-offset-2">
-                devlveleda@gmail.com
-            </a>
 
             <div className="flex m-2 flex-col sm:flex-row mx-auto items-center justify-center max-w-[150px] gap-4">
                 {Contacts.map((items) => (
